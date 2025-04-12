@@ -1,16 +1,15 @@
-
 export const personalInfo = {
-  name: "John Doe",
+  name: "Filip Karika",
   title: "Full Stack Developer",
-  email: "john.doe@example.com",
-  phone: "+1 (123) 456-7890",
-  location: "San Francisco, CA",
+  email: "filip.karika1@gmail.com",
+  phone: "+420 725 250 010",
+  location: "Prague, Czech Republic",
   bio: "I'm a 21-year-old passionate web developer with expertise in full-stack development. I love building responsive and user-friendly web applications using modern technologies. Currently looking for new opportunities to grow and contribute to innovative projects.",
   socialLinks: {
-    github: "https://github.com/johndoe",
-    linkedin: "https://linkedin.com/in/johndoe",
-    twitter: "https://twitter.com/johndoe",
-  }
+    github: "https://github.com/sknefi",
+    linkedin: "https://www.linkedin.com/in/filip-karika-13b5072b0/",
+    instagram: "https://www.instagram.com/f_karika_/",
+  },
 };
 
 export const skills = {
@@ -50,84 +49,182 @@ export const skills = {
     { name: "C", icon: "c" },
     { name: "Terminal", icon: "terminal" },
     { name: "Vim", icon: "vim" },
+	{ name: "Bash", icon: "bash" },
   ],
 };
 
 export const experience = [
   {
-    title: "Full Stack Developer",
-    company: "Tech Innovations Inc.",
-    location: "San Francisco, CA",
-    period: "Jun 2023 - Present",
-    description: "Developing and maintaining full-stack web applications using React, Node.js, and MongoDB. Implemented JWT authentication, RESTful APIs, and responsive UI components.",
-    technologies: ["React", "Node.js", "Express.js", "MongoDB", "JWT"],
+    title: "Lektor",
+    company: "Lionscz",
+    location: "Brno, Czech Republic",
+    period: "June 2024 - Present",
+    description:
+      "Creating manuals for students for python and web development course. Remote work.",
+    technologies: ["HTML", "CSS", "JavaScript", "Python", "Node.js", "Express.js", "MongoDB", "npm", "Auth", "RESTful APIs", "..."],
   },
   {
-    title: "Web Developer Intern",
-    company: "Digital Solutions",
-    location: "Remote",
-    period: "Jan 2023 - May 2023",
-    description: "Assisted in developing client websites, creating responsive layouts, and implementing features using JavaScript and modern CSS. Collaborated with design team to implement UI components.",
-    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    title: "Bartender",
+    company: "Frýdek-Místek Tančírna",
+    location: "Frýdek-Místek, Czech Republic",
+    period: "September 2022 - Present",
+    description:
+      "Helping with preparation of events. Making drinks and serving them to the guests. I am participating in this event every 1-2 months.",
+    technologies: ["Bartending", "Communication", "Teamwork"],
   },
   {
-    title: "Freelance Developer",
-    company: "Self-employed",
-    location: "Remote",
-    period: "Jun 2022 - Dec 2022",
-    description: "Built custom websites for small businesses. Focused on responsive design, performance optimization, and SEO best practices.",
-    technologies: ["HTML", "CSS", "JavaScript", "WordPress"],
+    title: "Life Guard",
+    company: "Grandhotel Permon 4*",
+    location: "Pribylina, Slovakia",
+    period: "July 2023 - August 2023",
+    description:
+      "Taking care of the guests, swimming pool, tobogans, and other facilities. Helping injured guests and guests with disabilities.",
+    technologies: ["First Aid", "Swimming", "Communication", "Teamwork"],
+  },
+  {
+    title: "Ovládanie CNC pri spracovaní dreva",
+    company: "Stolárstvo u Kunaja",
+    location: "Štrba, Slovakia",
+    period: "July 2022 - August 2022",
+    description:
+      "Assisted in CNC machine operation, we were processing doors and windows from unprocessed wood.",
+    technologies: ["CNC", "Manual work"],
   },
 ];
 
 export const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce website with product catalog, shopping cart, and payment integration.",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-    liveLink: "https://example.com/ecommerce",
-    repoLink: "https://github.com/johndoe/ecommerce",
+	title: "Webdev course - Lionscz",
+    description:
+      "Teaching students web development from scratch to advanced topics. Not published for public, only for purchase.",
+    image: "/webdevman.png",
+    technologies: ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "MongoDB", "Mongoose", "Mongosh", "Auth", "RESTful APIs","npm", "JWT", "Bcrypt", "..."],
+    liveLink: "https://lionscz.cz/",
+    repoLink: "https://lionscz.cz/",
   },
   {
-    title: "Task Management App",
-    description: "A collaborative task management application with real-time updates and team functionality.",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
-    technologies: ["React", "Express.js", "MongoDB", "Socket.io"],
-    liveLink: "https://example.com/taskmanager",
-    repoLink: "https://github.com/johndoe/taskmanager",
+    title: "FdF (Fil Der Fer)",
+    description:
+      "3D rendering of a 3D model of a 3D object. Projection from 3D model to 2D image using MLX42 library.",
+    image: "/fdf.png",
+    technologies: ["C", "Git", "MLX42", "Projection"],
+    liveLink: "-",
+    repoLink: "https://github.com/sknefi/FdF",
   },
   {
-    title: "Weather Dashboard",
-    description: "A weather application that displays current and forecasted weather conditions using third-party APIs.",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-    technologies: ["JavaScript", "HTML", "CSS", "Weather API"],
-    liveLink: "https://example.com/weather",
-    repoLink: "https://github.com/johndoe/weather-dashboard",
+    title: "MeetUs",
+    description:
+      "My first full stack project. It is a social media platform for meeting new people with a login system, a profile page, joining events and checking previous events.",
+    image: "/meetus.png",
+    technologies: ["React", "Bootstrap", "JSX", "Node.js", "Express.js", "Server storage", "Socket.io"],
+    liveLink: "-",
+    repoLink: "https://github.com/sknefi/react-app-MeetUS",
   },
   {
-    title: "IoT Home Automation",
-    description: "A system to control and monitor home devices using Arduino and a web interface.",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
-    technologies: ["Arduino", "C", "JavaScript", "MQTT"],
-    liveLink: "https://example.com/homeautomation",
-    repoLink: "https://github.com/johndoe/home-automation",
+    title: "Creative Agency",
+    description:
+      "My first project with HTML and CSS. It is a simple landing page for a creative agency. I combined all my skills from HTML and CSS.",
+    image: "/creativeagency.png",
+    technologies: ["HTML", "CSS"],
+    liveLink: "-",
+    repoLink: "https://github.com/sknefi/Creative-Agency",
   },
+  {
+    title: "Schelling's segregation",
+    description:
+      "Implementation of Schelling's segregation in Python. The program simulates the behavior of people moving into a new neighborhood and choosing their position based on the preferences of their neighbors.",
+    image: "/schellings.png",
+    technologies: ["Python", "Matplotlib", "Numpy"],
+    liveLink: "-",
+    repoLink: "https://github.com/sknefi/ai_uu/tree/main/p_02/uloha",
+  },
+  {
+	title: "Lumberjack Jano",
+    description:
+      "My first 2D game in Python. The player has to kill skeletons to gain points. The game never ends, purpose is to gain as many points as possible and enjoy the game.",
+    image: "/lumberjack.png",
+    technologies: ["Python", "Pygame"],
+    liveLink: "-",
+    repoLink: "https://github.com/sknefi/drevorubac-jano",
+  },
+  {
+	title: "Local search - Graph coloring",
+    description:
+      "Coloring of a graph using local search algorithm. Implementation hill climbing and random walk which is used to find the best solution when stuck in local optimum.",
+    image: "/graphcoloring.png",
+    technologies: ["Python", "Matplotlib", "Numpy"],
+    liveLink: "-",
+    repoLink: "https://github.com/sknefi/ai_uu/blob/main/p_03/uloha/",
+  }
+  ,
+  {
+	title: "Terain - Evolution algorithm",
+    description:
+      "Evolution algorithm for terrain generation. The algorithm is used to generate a terrain for a 2D visualisation. Based on the fitness function, the algorithm is able to generate a terain based on some parameters.",
+    image: "/terrain.png",
+    technologies: ["Python", "Matplotlib", "Numpy"],
+    liveLink: "-",
+    repoLink: "https://github.com/sknefi/ai_uu/blob/main/p_04/uloha/",
+  },
+  {
+	title: "Libft - 42 library",
+    description:
+      "Implementation of a library for 42. We created alibrary of functions that are used in the 42 curriculum." ,
+    image: "/libft.png",
+    technologies: ["C"],
+    liveLink: "-",
+    repoLink: "https://github.com/sknefi/libft_divinus",
+  },
+  {
+	title: "Minitalk",
+    description:
+      "Creating a simple client-server application using signals. The client sends a message to the server and the server sends a response back to the client." ,
+    image: "/minitalk.png",
+    technologies: ["C"],
+    liveLink: "-",
+    repoLink: "https://github.com/sknefi/minitalk",
+  },
+  {
+	title: "Other small projects",
+    description:
+      "Other small projects and algorithms that I have created for fun or for learning purposes you can find here on my github." ,
+    image: "/more.png",
+    technologies: ["C", "JavaScript", "Python", "..."],
+    liveLink: "https://github.com/sknefi/",
+    repoLink: "https://github.com/sknefi/",
+  }
 ];
-
 export const education = [
   {
-    degree: "Bachelor of Science in Computer Science",
-    institution: "University of Technology",
-    location: "San Francisco, CA",
-    period: "2020 - 2024 (Expected)",
-    description: "Focus on web development, software engineering, and database management. GPA: 3.8/4.0",
+    degree: "Software Engineering - Bachelor degree / certificate",
+    institution: "42 Prague",
+    location: "Prague, Czech Republic",
+    period: "2024 - present",
+    description:
+      "Focus on low level programming, algorithms, data structures, system administration and communication skills.",
   },
   {
-    degree: "Full Stack Web Development Bootcamp",
-    institution: "Code Academy",
-    location: "Online",
-    period: "2022",
-    description: "Intensive 12-week program covering front-end and back-end development technologies.",
+    degree: "Software Development - Bachelor degree",
+    institution: "Unicorn University",
+    location: "Prague, Czech Republic",
+    period: "2023 - present",
+    description:
+      "Focus on web development, algorithms, software engineering and database management.",
+  },
+  {
+    degree: "Informatics",
+    institution: "Charles University",
+    location: "Prague, Czech Republic",
+    period: "2022 - 2023",
+    description:
+      "Focus on programming, algorithms, data structures and mathematics.",
+  },
+  {
+    degree: "High School",
+    institution: "Tatranská Akadémia - Súkromná stredná odborná škola",
+    location: "Poprad, Slovakia",
+    period: "2018 - 2022",
+    description:
+      "Focus on programming, networking, graphics, electronics and web design.",
   },
 ];

@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -29,31 +28,31 @@ const Header = () => {
   ];
 
   return (
-    <header 
+    <header
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/90 shadow-md backdrop-blur-md py-4" : "bg-transparent py-6"
+        isScrolled
+          ? "bg-white/90 shadow-md backdrop-blur-md py-4"
+          : "bg-transparent py-6"
       }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         <a href="#home" className="text-xl font-bold text-portfolio-blue">
-          John<span className="text-portfolio-dark">Doe</span>
+          <span className="text-portfolio-dark"> &lt;/</span>
+          Filip<span className="text-portfolio-dark">Karika</span>
+          <span className="text-portfolio-dark">&gt;</span>
         </a>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-8">
           {navLinks.map((link) => (
-            <a 
-              key={link.name} 
-              href={link.href}
-              className="nav-link"
-            >
+            <a key={link.name} href={link.href} className="nav-link">
               {link.name}
             </a>
           ))}
         </nav>
 
         {/* Mobile Menu Button */}
-        <button 
+        <button
           className="md:hidden text-gray-700 hover:text-portfolio-blue transition-colors"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle menu"

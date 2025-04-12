@@ -14,7 +14,7 @@ const Projects = () => {
               key={index} 
               className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
             >
-              <div className="relative h-56 overflow-hidden">
+              <div className="relative h-84 overflow-hidden">
                 <img 
                   src={project.image} 
                   alt={project.title}
