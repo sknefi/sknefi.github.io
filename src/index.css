@@ -5,7 +5,7 @@
 
 @layer base {
   :root {
-    --background: 250 33% 99%;
+    --background: 210 40% 98%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -14,16 +14,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 262 83% 66%;
+    --primary: 199 89% 48%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 250 43% 96.1%;
+    --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
-    --muted: 250 43% 96.1%;
+    --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 262 83% 66%;
+    --accent: 172 66% 40%;
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 84.2% 60.2%;
@@ -31,7 +31,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 262 83% 66%;
+    --ring: 199 89% 48%;
 
     --radius: 0.5rem;
 
@@ -43,6 +43,45 @@
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    
+    --primary: 199 89% 48%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    
+    --accent: 172 66% 40%;
+    --accent-foreground: 210 40% 98%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 199 89% 48%;
+
+    --sidebar-background: 222.2 84% 4.9%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 210 40% 98%;
+    --sidebar-primary-foreground: 222.2 47.4% 11.2%;
+    --sidebar-accent: 217.2 32.6% 17.5%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217.2 32.6% 17.5%;
+    --sidebar-ring: 199 89% 48%;
   }
 
   * {
@@ -63,25 +102,25 @@
   }
   
   .section-title::after {
-    @apply content-[''] absolute bottom-0 left-0 w-2/3 h-1 bg-portfolio-purple;
+    @apply content-[''] absolute bottom-0 left-0 w-2/3 h-1 bg-portfolio-blue;
   }
 }
 
 @layer components {
   .nav-link {
-    @apply relative text-foreground hover:text-portfolio-purple transition-colors duration-300 after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-portfolio-purple after:transition-all after:duration-300 hover:after:w-full;
+    @apply relative text-foreground hover:text-portfolio-blue transition-colors duration-300 after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-portfolio-blue after:transition-all after:duration-300 hover:after:w-full;
   }
 
   .btn-primary {
-    @apply bg-portfolio-purple hover:bg-portfolio-dark-purple text-white font-semibold py-2 px-6 rounded-md transition-colors duration-300;
+    @apply bg-portfolio-blue hover:bg-portfolio-dark-blue text-white font-semibold py-2 px-6 rounded-md transition-colors duration-300;
   }
   
   .btn-outline {
-    @apply border-2 border-portfolio-purple text-portfolio-purple hover:bg-portfolio-purple hover:text-white font-semibold py-2 px-6 rounded-md transition-colors duration-300;
+    @apply border-2 border-portfolio-blue text-portfolio-blue hover:bg-portfolio-blue hover:text-white font-semibold py-2 px-6 rounded-md transition-colors duration-300;
   }
 
   .skill-card {
-    @apply flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300;
+    @apply flex flex-col items-center justify-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300;
   }
 }
 
@@ -92,13 +131,16 @@
 
 ::-webkit-scrollbar-track {
   background: theme('colors.gray.100');
+  .dark & {
+    background: theme('colors.gray.800');
+  }
 }
 
 ::-webkit-scrollbar-thumb {
-  background: theme('colors.portfolio.purple');
+  background: theme('colors.portfolio.blue');
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: theme('colors.portfolio.dark-purple');
+  background: theme('colors.portfolio.dark-blue');
 }
