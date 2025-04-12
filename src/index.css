@@ -45,45 +45,6 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-    
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    
-    --primary: 199 89% 48%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    
-    --accent: 172 66% 40%;
-    --accent-foreground: 210 40% 98%;
-    
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 199 89% 48%;
-
-    --sidebar-background: 222.2 84% 4.9%;
-    --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 210 40% 98%;
-    --sidebar-primary-foreground: 222.2 47.4% 11.2%;
-    --sidebar-accent: 217.2 32.6% 17.5%;
-    --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 217.2 32.6% 17.5%;
-    --sidebar-ring: 199 89% 48%;
-  }
-
   * {
     @apply border-border;
     scroll-behavior: smooth;
@@ -120,7 +81,7 @@
   }
 
   .skill-card {
-    @apply flex flex-col items-center justify-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300;
+    @apply flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300;
   }
 }
 
@@ -131,9 +92,6 @@
 
 ::-webkit-scrollbar-track {
   background: theme('colors.gray.100');
-  .dark & {
-    background: theme('colors.gray.800');
-  }
 }
 
 ::-webkit-scrollbar-thumb {
