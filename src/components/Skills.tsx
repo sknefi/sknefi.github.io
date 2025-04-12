@@ -17,11 +17,13 @@ const Skills = () => {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
             {skills.daily.map((skill, index) => (
               <div key={index} className="skill-card">
-                <img 
-                  src={getSkillIconUrl(skill.icon)} 
-                  alt={skill.name} 
-                  className="w-12 h-12 mb-3"
-                />
+                <div className="h-12 w-12 flex items-center justify-center mb-3">
+                  <img 
+                    src={getSkillIconUrl(skill.icon)} 
+                    alt={skill.name} 
+                    className="max-h-full max-w-full object-contain"
+                  />
+                </div>
                 <span className="text-gray-700">{skill.name}</span>
               </div>
             ))}
@@ -33,11 +35,13 @@ const Skills = () => {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-6">
             {skills.proficient.map((skill, index) => (
               <div key={index} className="skill-card">
-                <img 
-                  src={getSkillIconUrl(skill.icon)} 
-                  alt={skill.name} 
-                  className="w-12 h-12 mb-3"
-                />
+                <div className="h-12 w-12 flex items-center justify-center mb-3">
+                  <img 
+                    src={getSkillIconUrl(skill.icon)} 
+                    alt={skill.name} 
+                    className="max-h-full max-w-full object-contain"
+                  />
+                </div>
                 <span className="text-gray-700">{skill.name}</span>
               </div>
             ))}
@@ -49,11 +53,13 @@ const Skills = () => {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
             {skills.webDevelopment.map((skill, index) => (
               <div key={index} className="skill-card">
-                <img 
-                  src={getSkillIconUrl(skill.icon)} 
-                  alt={skill.name} 
-                  className="w-12 h-12 mb-3"
-                />
+                <div className="h-12 w-12 flex items-center justify-center mb-3">
+                  <img 
+                    src={getSkillIconUrl(skill.icon)} 
+                    alt={skill.name} 
+                    className="max-h-full max-w-full object-contain"
+                  />
+                </div>
                 <span className="text-gray-700">{skill.name}</span>
               </div>
             ))}
@@ -65,11 +71,13 @@ const Skills = () => {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-6">
             {skills.lowLevel.map((skill, index) => (
               <div key={index} className="skill-card">
-                <img 
-                  src={getSkillIconUrl(skill.icon)} 
-                  alt={skill.name} 
-                  className="w-12 h-12 mb-3"
-                />
+                <div className="h-12 w-12 flex items-center justify-center mb-3">
+                  <img 
+                    src={getSkillIconUrl(skill.icon)} 
+                    alt={skill.name} 
+                    className="max-h-full max-w-full object-contain"
+                  />
+                </div>
                 <span className="text-gray-700">{skill.name}</span>
               </div>
             ))}
