@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="flex justify-center mb-8">
           <a 
             href="#home" 
-            className="w-12 h-12 bg-portfolio-blue rounded-full flex items-center justify-center hover:bg-portfolio-dark-blue transition-colors"
+            className="w-12 h-12 bg-portfolio-purple rounded-full flex items-center justify-center hover:bg-portfolio-dark-purple transition-colors"
             aria-label="Back to top"
           >
             <ArrowUp size={20} />
