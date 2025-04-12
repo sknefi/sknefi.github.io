@@ -2,13 +2,13 @@
 import { skills } from "@/lib/data";
 
 const Skills = () => {
-  // Function to get skill icon URL with consistent size
+  // Function to get skill icon URL
   const getSkillIconUrl = (iconName: string) => {
     return `https://skillicons.dev/icons?i=${iconName}`;
   };
 
   return (
-    <section id="skills" className="section-padding bg-gray-50 dark:bg-gray-800">
+    <section id="skills" className="section-padding bg-gray-50">
       <div className="container mx-auto">
         <h2 className="section-title">My Skills</h2>
 
@@ -17,14 +17,12 @@ const Skills = () => {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
             {skills.daily.map((skill, index) => (
               <div key={index} className="skill-card">
-                <div className="w-16 h-16 flex items-center justify-center mb-3">
-                  <img 
-                    src={getSkillIconUrl(skill.icon)} 
-                    alt={skill.name} 
-                    className="max-w-full max-h-full object-contain"
-                  />
-                </div>
-                <span className="text-gray-700 dark:text-gray-300">{skill.name}</span>
+                <img 
+                  src={getSkillIconUrl(skill.icon)} 
+                  alt={skill.name} 
+                  className="w-12 h-12 mb-3"
+                />
+                <span className="text-gray-700">{skill.name}</span>
               </div>
             ))}
           </div>
@@ -35,14 +33,12 @@ const Skills = () => {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-6">
             {skills.proficient.map((skill, index) => (
               <div key={index} className="skill-card">
-                <div className="w-16 h-16 flex items-center justify-center mb-3">
-                  <img 
-                    src={getSkillIconUrl(skill.icon)} 
-                    alt={skill.name} 
-                    className="max-w-full max-h-full object-contain"
-                  />
-                </div>
-                <span className="text-gray-700 dark:text-gray-300">{skill.name}</span>
+                <img 
+                  src={getSkillIconUrl(skill.icon)} 
+                  alt={skill.name} 
+                  className="w-12 h-12 mb-3"
+                />
+                <span className="text-gray-700">{skill.name}</span>
               </div>
             ))}
           </div>
@@ -53,14 +49,12 @@ const Skills = () => {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
             {skills.webDevelopment.map((skill, index) => (
               <div key={index} className="skill-card">
-                <div className="w-16 h-16 flex items-center justify-center mb-3">
-                  <img 
-                    src={getSkillIconUrl(skill.icon)} 
-                    alt={skill.name} 
-                    className="max-w-full max-h-full object-contain"
-                  />
-                </div>
-                <span className="text-gray-700 dark:text-gray-300">{skill.name}</span>
+                <img 
+                  src={getSkillIconUrl(skill.icon)} 
+                  alt={skill.name} 
+                  className="w-12 h-12 mb-3"
+                />
+                <span className="text-gray-700">{skill.name}</span>
               </div>
             ))}
           </div>
@@ -71,14 +65,12 @@ const Skills = () => {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-6">
             {skills.lowLevel.map((skill, index) => (
               <div key={index} className="skill-card">
-                <div className="w-16 h-16 flex items-center justify-center mb-3">
-                  <img 
-                    src={getSkillIconUrl(skill.icon)} 
-                    alt={skill.name} 
-                    className="max-w-full max-h-full object-contain"
-                  />
-                </div>
-                <span className="text-gray-700 dark:text-gray-300">{skill.name}</span>
+                <img 
+                  src={getSkillIconUrl(skill.icon)} 
+                  alt={skill.name} 
+                  className="w-12 h-12 mb-3"
+                />
+                <span className="text-gray-700">{skill.name}</span>
               </div>
             ))}
           </div>
