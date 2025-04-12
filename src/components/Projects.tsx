@@ -1,4 +1,3 @@
-
 import { projects } from "@/lib/data";
 import { ExternalLink, Github } from "lucide-react";
 
@@ -39,15 +38,12 @@ const Projects = () => {
                 
                 <div className="flex space-x-4">
                   {project.liveLink && (
-                    <a 
-                      href={project.liveLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn-primary inline-flex items-center text-sm"
+                    <div  
+                      className="btn-primary inline-flex items-center text-sm opacity-50 cursor-not-allowed"
                     >
                       <span>Live Demo</span>
                       <ExternalLink size={16} className="ml-2" />
-                    </a>
+                    </div>
                   )}
                   
                   {project.repoLink && (

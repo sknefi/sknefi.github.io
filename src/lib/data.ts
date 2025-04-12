@@ -12,6 +12,12 @@ export const personalInfo = {
   },
 };
 
+export const emailInfo = {
+  serviceId: "7c2a192201c0de1a3f4a4e89",
+  templateId: "template_te4gc8o",
+  publicKey: "OFzVAryCQXk4po3vO",
+};
+
 export const skills = {
   daily: [
     { name: "VS Code", icon: "vscode" },
@@ -82,7 +88,7 @@ export const experience = [
     technologies: ["First Aid", "Swimming", "Communication", "Teamwork"],
   },
   {
-    title: "Ovládanie CNC pri spracovaní dreva",
+    title: "CNC machine operator",
     company: "Stolárstvo u Kunaja",
     location: "Štrba, Slovakia",
     period: "July 2022 - August 2022",
