@@ -112,6 +112,8 @@ const Certificates = () => {
                         </div>
                         <a 
                           href={certificate.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           download
                           className="flex items-center gap-2 btn-primary mt-4"
                         >
