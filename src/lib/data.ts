@@ -200,6 +200,7 @@ export const projects = [
     repoLink: "https://github.com/sknefi/",
   }
 ];
+
 export const education = [
   {
     degree: "Software Engineering - Bachelor degree / certificate",
@@ -233,4 +234,77 @@ export const education = [
     description:
       "Focus on programming, networking, graphics, electronics and web development.",
   },
+];
+
+export const certificates = [
+  {
+    name: "React - The Complete Guide",
+    issuer: "Udemy",
+    date: "2023",
+    image: "/placeholder.svg",
+    link: "#",
+  },
+  {
+    name: "Modern JavaScript From The Beginning",
+    issuer: "Udemy",
+    date: "2023",
+    image: "/placeholder.svg",
+    link: "#",
+  },
+  {
+    name: "Node.js API Masterclass",
+    issuer: "Udemy",
+    date: "2023",
+    image: "/placeholder.svg", 
+    link: "#",
+  },
+  {
+    name: "Advanced CSS and Sass",
+    issuer: "Udemy",
+    date: "2022",
+    image: "/placeholder.svg",
+    link: "#",
+  },
+  {
+    name: "MongoDB - The Complete Developer's Guide",
+    issuer: "Udemy",
+    date: "2023",
+    image: "/placeholder.svg",
+    link: "#",
+  },
+  {
+    name: "Python Programming Masterclass",
+    issuer: "Coursera",
+    date: "2022",
+    image: "/placeholder.svg",
+    link: "#",
+  },
+  {
+    name: "Web Development Bootcamp",
+    issuer: "Udemy",
+    date: "2021",
+    image: "/placeholder.svg",
+    link: "#",
+  },
+  {
+    name: "Data Structures & Algorithms",
+    issuer: "Coursera",
+    date: "2022",
+    image: "/placeholder.svg",
+    link: "#",
+  },
+  {
+    name: "TypeScript Deep Dive",
+    issuer: "Udemy",
+    date: "2023",
+    image: "/placeholder.svg",
+    link: "#",
+  },
+  {
+    name: "AWS Certified Developer",
+    issuer: "Amazon Web Services",
+    date: "2023",
+    image: "/placeholder.svg",
+    link: "#",
+  }
 ];
