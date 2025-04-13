@@ -1,3 +1,3 @@
 # Hi! I am Filip
 
-This is my personal website
+and this is my website https://sknefi.github.io/ 😇
