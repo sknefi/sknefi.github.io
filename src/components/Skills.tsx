@@ -4,7 +4,6 @@ const Skills = () => {
   // Function to get skill icon URL
   const getSkillIconUrl = (iconName: string) => {
 	const path = `https://go-skill-icons.vercel.app/api/icons?i=${iconName}&theme=light`;
-	console.log(path);
 	return path;
   };
 

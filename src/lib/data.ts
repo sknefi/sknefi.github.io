@@ -231,6 +231,6 @@ export const education = [
     location: "Poprad, Slovakia",
     period: "2018 - 2022",
     description:
-      "Focus on programming, networking, graphics, electronics and web design.",
+      "Focus on programming, networking, graphics, electronics and web development.",
   },
 ];
