@@ -1,7 +1,15 @@
 
 import { useState } from "react";
 import { certificates } from "@/lib/data";
-import { Search } from "lucide-react";
+import { Search, Download } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 const Certificates = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -50,34 +58,69 @@ const Certificates = () => {
               {filteredCertificates
                 .slice(0, visibleCount)
                 .map((certificate, index) => (
-                  <a
-                    href={certificate.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    key={index}
-                    className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
-                  >
-                    <div className="h-40 bg-gray-200 overflow-hidden">
-                      <img
-                        src={certificate.image}
-                        alt={certificate.name}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div className="p-4">
-                      <h3 className="font-bold text-lg mb-1 text-gray-800 line-clamp-2">
-                        {certificate.name}
-                      </h3>
-                      <div className="flex justify-between items-center">
-                        <span className="text-sm text-gray-600">
-                          {certificate.issuer}
-                        </span>
-                        <span className="text-xs font-medium bg-portfolio-light-blue text-portfolio-blue px-2 py-1 rounded-full">
-                          {certificate.date}
-                        </span>
+                  <Dialog key={index}>
+                    <DialogTrigger asChild>
+                      <div 
+                        className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer"
+                      >
+                        <div className="h-40 bg-gray-200 overflow-hidden">
+                          <img
+                            src={certificate.image}
+                            alt={certificate.issuer}
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                        <div className="p-4">
+                          <h3 className="font-bold text-lg mb-1 text-gray-800 line-clamp-2">
+                            {certificate.name}
+                          </h3>
+                          <div className="flex justify-between items-center">
+                            <span className="text-sm text-gray-600">
+                              {certificate.issuer}
+                            </span>
+                            <span className="text-xs font-medium bg-portfolio-light-blue text-portfolio-blue px-2 py-1 rounded-full">
+                              {certificate.date}
+                            </span>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </a>
+                    </DialogTrigger>
+                    <DialogContent className="max-w-3xl">
+                      <DialogHeader>
+                        <DialogTitle>{certificate.name}</DialogTitle>
+                        <DialogDescription>
+                          {certificate.issuer} - {certificate.date}
+                        </DialogDescription>
+                      </DialogHeader>
+                      <div className="flex flex-col items-center">
+                        <div className="my-4 max-h-96 overflow-hidden">
+                          {certificate.link.endsWith('.pdf') ? (
+                            <div className="bg-gray-100 p-6 rounded-lg flex flex-col items-center">
+                              <embed 
+                                src={certificate.link} 
+                                type="application/pdf" 
+                                className="w-full h-60"
+                              />
+                            </div>
+                          ) : (
+                            <img 
+                              src={certificate.link} 
+                              alt={certificate.name} 
+                              className="max-w-full max-h-full object-contain"
+                            />
+                          )}
+                        </div>
+                        <a 
+                          href={certificate.link}
+                          download
+                          className="flex items-center gap-2 btn-primary mt-4"
+                        >
+                          <Download className="h-4 w-4" />
+                          Download Certificate
+                        </a>
+                      </div>
+                    </DialogContent>
+                  </Dialog>
                 ))}
             </div>
 
