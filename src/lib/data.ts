@@ -275,176 +275,176 @@ export const certificates = [
     name: "Algorithms and Data Structures",
     issuer: "Unicorn University",
     date: "2024",
-    image: "/certificates/imgs/unicornuni.png",
-    link: "/certificates/pdf/ads.pdf",
+    image: "/cert_imgs/unicornuni.png",
+    link: "/cert_pdfs/ads.pdf",
     description: "Comprehensive study of data structures and algorithms including sorting, searching, and graph algorithms with practical implementations."
   },
   {
     name: "Basics of Web Development",
     issuer: "Unicorn University",
     date: "2024",
-    image: "/certificates/imgs/unicornuni.png",
-    link: "/certificates/pdf/basicwebdev.pdf",
+    image: "/cert_imgs/unicornuni.png",
+    link: "/cert_pdfs/basicwebdev.pdf",
     description: "Introduction to HTML, CSS, and JavaScript. Building responsive websites with modern web development practices."
   },
   {
     name: "MongoDB Essentials",
     issuer: "Unicorn University",
     date: "2024",
-    image: "/certificates/imgs/unicornuni.png",
-    link: "/certificates/pdf/mongodb.pdf",
+    image: "/cert_imgs/unicornuni.png",
+    link: "/cert_pdfs/mongodb.pdf",
     description: "Core concepts of MongoDB database system including CRUD operations, aggregation framework, and data modeling strategies."
   },
   {
     name: "Introduction to Git and GitHub",
     issuer: "Unicorn University",
     date: "2024",
-    image: "/certificates/imgs/unicornuni.png",
-    link: "/certificates/pdf/git.pdf",
+    image: "/cert_imgs/unicornuni.png",
+    link: "/cert_pdfs/git.pdf",
     description: "Version control fundamentals using Git and GitHub, including branching strategies and collaborative development workflows."
   },
   {
     name: "Responsive Web Design",
     issuer: "FreeCodeCamp",
     date: "2024",
-    image: "/certificates/imgs/freecodecamp.png",
-    link: "/certificates/pdf/rwd.png",
+    image: "/cert_imgs/freecodecamp.png",
+    link: "/cert_pdfs/rwd.png",
     description: "Creating responsive layouts with CSS flexbox, grid, and media queries to ensure applications work across all device sizes."
   },
   {
     name: "React JS",
     issuer: "Unicorn University",
     date: "2024",
-    image: "/certificates/imgs/unicornuni.png",
-    link: "/certificates/pdf/react.pdf",
+    image: "/cert_imgs/unicornuni.png",
+    link: "/cert_pdfs/react.pdf",
     description: "Building modern single-page applications with React, including state management, hooks, and component architecture."
   },
   {
     name: "Introduction to Software Development",
     issuer: "Unicorn University",
     date: "2024",
-    image: "/certificates/imgs/unicornuni.png",
-    link: "/certificates/pdf/itsd.pdf",
+    image: "/cert_imgs/unicornuni.png",
+    link: "/cert_pdfs/itsd.pdf",
     description: "Overview of software development practices, methodologies, and lifecycles including Agile, DevOps, and testing approaches."
   },
   {
     name: "Programming in JavaScript",
     issuer: "Unicorn University",
     date: "2024",
-    image: "/certificates/imgs/unicornuni.png",
-    link: "/certificates/pdf/js.pdf",
+    image: "/cert_imgs/unicornuni.png",
+    link: "/cert_pdfs/js.pdf",
     description: "Core JavaScript concepts including DOM manipulation, async programming, and modern ES6+ features."
   },
   {
     name: "Basics concepts of cybersecurity",
     issuer: "Unicorn University",
     date: "2025",
-    image: "/certificates/imgs/unicornuni.png",
-    link: "/certificates/pdf/cybersec.pdf",
+    image: "/cert_imgs/unicornuni.png",
+    link: "/cert_pdfs/cybersec.pdf",
     description: "Introduction to information security principles, common vulnerabilities, and defensive measures for web applications."
   },
   {
     name: "Introduction to software architecture",
     issuer: "Unicorn University",
     date: "2024",
-    image: "/certificates/imgs/unicornuni.png",
-    link: "/certificates/pdf/itsa.pdf",
+    image: "/cert_imgs/unicornuni.png",
+    link: "/cert_pdfs/itsa.pdf",
     description: "Understanding architectural patterns, system design principles, and making architectural decisions for scalable solutions."
   },
   {
     name: "IoT Essentials",
     issuer: "Unicorn University",
     date: "2024",
-    image: "/certificates/imgs/unicornuni.png",
-    link: "/certificates/pdf/iot.pdf",
+    image: "/cert_imgs/unicornuni.png",
+    link: "/cert_pdfs/iot.pdf",
     description: "Fundamentals of Internet of Things technologies, protocols, and application design for connected devices."
   },
   {
     name: "Relational databases",
     issuer: "Unicorn University",
     date: "2024",
-    image: "/certificates/imgs/unicornuni.png",
-    link: "/certificates/pdf/relational.pdf",
+    image: "/cert_imgs/unicornuni.png",
+    link: "/cert_pdfs/relational.pdf",
     description: "Database design, SQL, normalization, transaction management, and performance optimization for relational database systems."
   },
   {
     name: "IT in business",
     issuer: "Unicorn University",
     date: "2024",
-    image: "/certificates/imgs/unicornuni.png",
-    link: "/certificates/pdf/itb.pdf",
+    image: "/cert_imgs/unicornuni.png",
+    link: "/cert_pdfs/itb.pdf",
     description: "Using information technology to drive business value, align with business strategy, and enable digital transformation."
   },
   {
     name: "Management",
     issuer: "Unicorn University",
     date: "2024",
-    image: "/certificates/imgs/unicornuni.png",
-    link: "/certificates/pdf/management.pdf",
+    image: "/cert_imgs/unicornuni.png",
+    link: "/cert_pdfs/management.pdf",
     description: "Principles of project management, team leadership, and organizational behavior in technology environments."
   },
   {
     name: "Basic concepts of business",
     issuer: "Unicorn University",
     date: "2024",
-    image: "/certificates/imgs/unicornuni.png",
-    link: "/certificates/pdf/bcob.pdf",
+    image: "/cert_imgs/unicornuni.png",
+    link: "/cert_pdfs/bcob.pdf",
     description: "Introduction to business fundamentals including economics, marketing, finance, and strategic planning."
   },
   {
     name: "Elementary functions of mathematics",
     issuer: "Unicorn University",
     date: "2024",
-    image: "/certificates/imgs/unicornuni.png",
-    link: "/certificates/pdf/elmath.pdf",
+    image: "/cert_imgs/unicornuni.png",
+    link: "/cert_pdfs/elmath.pdf",
     description: "Study of elementary functions, their properties, graphs, and applications in mathematical problem-solving."
   },
   {
     name: "Complex numbers",
     issuer: "Unicorn University",
     date: "2024",
-    image: "/certificates/imgs/unicornuni.png",
-    link: "/certificates/pdf/complex.pdf",
+    image: "/cert_imgs/unicornuni.png",
+    link: "/cert_pdfs/complex.pdf",
     description: "Understanding complex number systems, operations, and their applications in various mathematical and engineering contexts."
   },
   {
     name: "Derivatives and Integrals",
     issuer: "Unicorn University",
     date: "2024",
-    image: "/certificates/imgs/unicornuni.png",
-    link: "/certificates/pdf/calculus.pdf",
+    image: "/cert_imgs/unicornuni.png",
+    link: "/cert_pdfs/calculus.pdf",
     description: "Calculus concepts focusing on differentiation, integration, and their practical applications in problem-solving."
   },
   {
     name: "Statistics",
     issuer: "Unicorn University",
     date: "2024",
-    image: "/certificates/imgs/unicornuni.png",
-    link: "/certificates/pdf/statistics.pdf",
+    image: "/cert_imgs/unicornuni.png",
+    link: "/cert_pdfs/statistics.pdf",
     description: "Statistical methods for data analysis including probability, hypothesis testing, regression, and data visualization."
   },
   {
     name: "uu5 - Intern framework",
     issuer: "Unicorn University",
     date: "2025",
-    image: "/certificates/imgs/unicornuni.png",
-    link: "/certificates/pdf/uu5.pdf",
+    image: "/cert_imgs/unicornuni.png",
+    link: "/cert_pdfs/uu5.pdf",
     description: "Building applications with Unicorn's proprietary uu5 framework, focused on component-based frontend development."
   },
   {
     name: "uuAppServer - Intern framework",
     issuer: "Unicorn University",
     date: "2024",
-    image: "/certificates/imgs/unicornuni.png",
-    link: "/certificates/pdf/uuapps.pdf",
+    image: "/cert_imgs/unicornuni.png",
+    link: "/cert_pdfs/uuapps.pdf",
     description: "Server-side development using Unicorn's uuAppServer framework for creating scalable business applications."
   },
   {
     name: "Business English",
     issuer: "Unicorn University",
     date: "2024",
-    image: "/certificates/imgs/unicornuni.png",
-    link: "/certificates/pdf/be.pdf",
+    image: "/cert_imgs/unicornuni.png",
+    link: "/cert_pdfs/be.pdf",
     description: "Professional English communication skills for business environments, technical documentation, and presentations."
   },
 ];
