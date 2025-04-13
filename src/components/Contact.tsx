@@ -47,7 +47,7 @@ const Contact = () => {
           description: "Thank you for your message. I'll get back to you soon.",
         });
 
-        setFormData({	
+        setFormData({
           name: "",
           email: "",
           subject: "",
@@ -78,6 +78,9 @@ const Contact = () => {
             <p className="text-gray-700 mb-8">
               Feel free to reach out if you're looking for a developer, have a
               question, or just want to connect.
+            </p>
+            <p className="text-gray-700 mb-8">
+              Or if you just enjoy my portfolio you can let me know! 😇
             </p>
 
             <div className="space-y-6">

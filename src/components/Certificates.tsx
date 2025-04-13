@@ -1,7 +1,7 @@
-
 import { useState } from "react";
 import { certificates } from "@/lib/data";
 import { Search, Download } from "lucide-react";
+import { personalInfo } from "@/lib/data";
 import {
   Dialog,
   DialogContent,
@@ -93,14 +93,21 @@ const Certificates = () => {
                         </DialogDescription>
                       </DialogHeader>
                       <div className="flex flex-col items-center">
+                        <p className="text-gray-700 mb-4 text-center">
+                          {certificate.description}
+                        </p>
                         <div className="my-4 max-h-96 overflow-hidden">
                           {certificate.link.endsWith('.pdf') ? (
-                            <div className="bg-gray-100 p-6 rounded-lg flex flex-col items-center">
-                              <embed 
-                                src={certificate.link} 
-                                type="application/pdf" 
-                                className="w-full h-60"
-                              />
+                            <div className="bg-gray-100 p-6 rounded-lg flex flex-col items-center w-full">
+                              <object
+                                data={`${certificate.link}#page=1&view=FitH`}
+                                type="application/pdf"
+                                className="w-full h-80"
+                              >
+                                <p>Your browser does not support PDFs. 
+                                  <a href={certificate.link}>Download the PDF</a> to view it.
+                                </p>
+                              </object>
                             </div>
                           ) : (
                             <img 
@@ -112,9 +119,7 @@ const Certificates = () => {
                         </div>
                         <a 
                           href={certificate.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          download
+                          download={`${personalInfo.name} - ${certificate.name} certificate`}
                           className="flex items-center gap-2 btn-primary mt-4"
                         >
                           <Download className="h-4 w-4" />
