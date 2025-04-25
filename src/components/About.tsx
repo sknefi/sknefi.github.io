@@ -16,6 +16,14 @@ const About = () => {
             <p className="text-gray-700 mb-6">
               I'm constantly learning and exploring new technologies to stay at the cutting edge of web development. My goal is to create efficient, scalable, and user-friendly applications that solve real-world problems.
             </p>
+
+            <div className="mb-6">
+              <img 
+                src="/fk_ml.pdf" 
+                alt="Filip Karika"
+                className="rounded-lg w-48 h-48 object-cover mb-6 shadow-lg"
+              />
+            </div>
             
             <div className="flex flex-col space-y-4 mb-8">
               <div className="flex items-center">
