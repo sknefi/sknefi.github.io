@@ -1,4 +1,3 @@
-
 import { personalInfo, education } from "@/lib/data";
 import { Mail, MapPin, Phone } from "lucide-react";
 
@@ -10,19 +9,25 @@ const About = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
-            <p className="text-gray-700 mb-6">
-              {personalInfo.bio}
-            </p>
-            <p className="text-gray-700 mb-6">
-              I'm constantly learning and exploring new technologies to stay at the cutting edge of web development. My goal is to create efficient, scalable, and user-friendly applications that solve real-world problems.
-            </p>
+            <div className="max-w-[1042px]:hidden">
+              <p className="text-gray-700 mb-6">
+                {personalInfo.bio}
+              </p>
+              <p className="text-gray-700 mb-6">
+                I'm constantly learning and exploring new technologies to stay at the cutting edge of web development. My goal is to create efficient, scalable, and user-friendly applications that solve real-world problems.
+              </p>
+            </div>
 
-            <div className="mb-6">
-              <img 
-                src="/fk_ml.pdf" 
-                alt="Filip Karika"
-                className="rounded-lg w-48 h-48 object-cover mb-6 shadow-lg"
-              />
+            <div className="hidden max-w-[1042px]:block mb-6">
+              <p className="text-gray-700 mb-3">
+                Full-stack developer passionate about creating innovative solutions.
+              </p>
+              <p className="text-gray-700 mb-3">
+                Experienced in modern web technologies and best practices.
+              </p>
+              <p className="text-gray-700 mb-6">
+                Committed to delivering efficient and user-friendly applications.
+              </p>
             </div>
             
             <div className="flex flex-col space-y-4 mb-8">
