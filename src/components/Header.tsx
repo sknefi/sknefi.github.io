@@ -1,10 +1,12 @@
 
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -45,9 +47,9 @@ const Header = () => {
         </a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-8">
+        <nav className="hidden lg:flex space-x-6">
           {navLinks.map((link) => (
-            <a key={link.name} href={link.href} className="nav-link">
+            <a key={link.name} href={link.href} className="nav-link whitespace-nowrap">
               {link.name}
             </a>
           ))}
@@ -55,7 +57,7 @@ const Header = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-gray-700 hover:text-portfolio-blue transition-colors"
+          className="lg:hidden text-gray-700 hover:text-portfolio-blue transition-colors"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -64,7 +66,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <nav className="absolute top-full left-0 right-0 flex flex-col bg-white shadow-lg py-4 md:hidden animate-fade-in">
+          <nav className="absolute top-full left-0 right-0 flex flex-col bg-white shadow-lg py-4 lg:hidden animate-fade-in">
             {navLinks.map((link) => (
               <a
                 key={link.name}
