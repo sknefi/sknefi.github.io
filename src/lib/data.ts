@@ -4,7 +4,7 @@ export const personalInfo = {
   email: "filip.karika1@gmail.com",
   phone: "+420 725 250 010",
   location: "Prague, Czech Republic",
-  bio: "I'm a 21-year-old passionate web developer with expertise in full-stack development. I love building responsive and user-friendly web applications using modern technologies. Currently looking for new opportunities to grow and contribute to innovative projects.",
+  bio: "I'm a 22-year-old passionate web developer with expertise in full-stack development. I love building responsive and user-friendly web applications using modern technologies. Currently looking for new opportunities to grow and contribute to innovative projects.",
   socialLinks: {
     github: "https://github.com/sknefi",
     linkedin: "https://www.linkedin.com/in/filip-karika-13b5072b0/",
@@ -136,6 +136,15 @@ export const projects = [
     repoLink: "https://lionscz.cz/",
   },
   {
+    title: "Minishell",
+    description:
+      "Copy of the bash shell. It is a command line interpreter that allows you to execute commands and programs.",
+    image: "/projects/minishell-img.png",
+    technologies: ["C", "Git"],
+    liveLink: "-",
+    repoLink: "https://github.com/sknefi/Minishell",
+  },
+  {
     title: "FdF (Fil Der Fer)",
     description:
       "3D rendering of a 3D model of a 3D object. Projection from 3D model to 2D image using MLX42 library.",
@@ -156,7 +165,6 @@ export const projects = [
       "Node.js",
       "Express.js",
       "Server storage",
-      "Socket.io",
     ],
     liveLink: "-",
     repoLink: "https://github.com/sknefi/react-app-MeetUS",
@@ -202,9 +210,36 @@ export const projects = [
     description:
       "Evolution algorithm for terrain generation. The algorithm is used to generate a terrain for a 2D visualisation. Based on the fitness function, the algorithm is able to generate a terain based on some parameters.",
     image: "/projects/terrain.png",
-    technologies: ["Python", "Matplotlib", "Numpy"],
+    technologies: ["Python", "Matplotlib", "Numpy", "Evolution algorithm"],
     liveLink: "-",
     repoLink: "https://github.com/sknefi/ai_uu/blob/main/p_04/uloha/",
+  },
+  {
+    title: "UFO - searching algorithms",
+    description:
+      "Implementation of searching algorithms and their visualisation. Used algorithms are greedy best-first search, Dijkstra's algorithm and A* search.",
+    image: "/projects/ufo.png",
+    technologies: ["Python", "Pygame", "Numpy", "deque", "heapq"],
+    liveLink: "-",
+    repoLink: "https://github.com/sknefi/ai_uu/tree/main/p_08/uloha",
+  },
+  {
+    title: "Flowers recognition",
+    description:
+      "Flowers recognition using a neural network. The neural network is trained to recognise flowers from a dataset of images.",
+    image: "/projects/rose.png",
+    technologies: ["Python", "TensorFlow", "Numpy", "Keras"],
+    liveLink: "-",
+    repoLink: "https://github.com/sknefi/ai_uu/tree/main/p_07/uloha",
+  },
+  {
+    title: "BOOM Master - Neural network with evolutionary algorithm",
+    description:
+      "Neural network with evolutionary algorithm. The neural network trained the player to dodge mines in a game.",
+    image: "/projects/boom.png",
+    technologies: ["Python", "Deap", "Numpy", "Pygame"],
+    liveLink: "-",
+    repoLink: "https://github.com/sknefi/ai_uu/tree/main/p_09/uloha",
   },
   {
     title: "Libft - 42 library",
