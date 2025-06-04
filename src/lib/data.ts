@@ -145,11 +145,20 @@ export const projects = [
     repoLink: "https://github.com/sknefi/Minishell",
   },
   {
+    title: "SafeHome",
+    description:
+      "IoT project for monitoring the home environment. It is a web application that allows you to monitor the home environment and control the devices.",
+    image: "/projects/safehome.png",
+    technologies: ["Node.js", "Express.js", "MongoDB", "Mongoose", "MongoDB Atlas", "React", "Node-RED", "MQTT", "C", "Git"],
+    liveLink: "https://safehome-zx9i.onrender.com/login",
+    repoLink: "https://github.com/sknefi/safehome",
+  },
+  {
     title: "FdF (Fil Der Fer)",
     description:
       "3D rendering of a 3D model of a 3D object. Projection from 3D model to 2D image using MLX42 library.",
     image: "/projects/fdf.png",
-    technologies: ["C", "Git", "MLX42", "Projection"],
+    technologies: ["C", "Git", "MLX42"],
     liveLink: "-",
     repoLink: "https://github.com/sknefi/FdF",
   },

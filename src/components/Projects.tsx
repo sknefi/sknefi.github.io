@@ -38,12 +38,25 @@ const Projects = () => {
                 
                 <div className="flex space-x-4">
                   {project.liveLink && (
-                    <div  
-                      className="btn-primary inline-flex items-center text-sm opacity-50 cursor-not-allowed"
-                    >
-                      <span>Live Demo</span>
-                      <ExternalLink size={16} className="ml-2" />
-                    </div>
+                    project.liveLink === "-" ? (
+                      <button 
+                        disabled
+                        className="btn-primary inline-flex items-center text-sm opacity-50 cursor-not-allowed"
+                      >
+                        <span>Live Demo</span>
+                        <ExternalLink size={16} className="ml-2" />
+                      </button>
+                    ) : (
+                      <a 
+                        href={project.liveLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn-primary inline-flex items-center text-sm"
+                      >
+                        <span>Live Demo</span>
+                        <ExternalLink size={16} className="ml-2" />
+                      </a>
+                    )
                   )}
                   
                   {project.repoLink && (
