@@ -163,6 +163,17 @@ export const projects = [
     repoLink: "https://github.com/sknefi/FdF",
   },
   {
+    title: "Design patterns in Java",
+    description:
+      "Implementation some of the mostpopular design patterns in Java.",
+    image: "/projects/javadp.png",
+    technologies: [
+		"Java"
+    ],
+    liveLink: "-",
+    repoLink: "https://github.com/sknefi/design_patterns",
+  },
+  {
     title: "MeetUs",
     description:
       "My first full stack project. It is a social media platform for meeting new people with a login system, a profile page, joining events and checking previous events.",
