@@ -53,6 +53,7 @@ export const skills = {
   ],
   lowLevel: [
     { name: "C", icon: "c" },
+    { name: "C++", icon: "cpp" },
     { name: "Terminal", icon: "terminal" },
     { name: "Vim", icon: "vim" },
     { name: "Bash", icon: "bash" },
@@ -149,7 +150,18 @@ export const projects = [
     description:
       "IoT project for monitoring the home environment. It is a web application that allows you to monitor the home environment and control the devices.",
     image: "/projects/safehome.png",
-    technologies: ["Node.js", "Express.js", "MongoDB", "Mongoose", "MongoDB Atlas", "React", "Node-RED", "MQTT", "C", "Git"],
+    technologies: [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "MongoDB Atlas",
+      "React",
+      "Node-RED",
+      "MQTT",
+      "C",
+      "Git",
+    ],
     liveLink: "https://safehome-zx9i.onrender.com/login",
     repoLink: "https://github.com/sknefi/safehome",
   },
@@ -167,9 +179,7 @@ export const projects = [
     description:
       "Implementation some of the mostpopular design patterns in Java.",
     image: "/projects/javadp.png",
-    technologies: [
-		"Java"
-    ],
+    technologies: ["Java"],
     liveLink: "-",
     repoLink: "https://github.com/sknefi/design_patterns",
   },
@@ -332,7 +342,8 @@ export const certificates = [
     date: "2024",
     image: "/cert_imgs/unicornuni.png",
     link: "/cert_pdfs/ads.pdf",
-    description: "Comprehensive study of data structures and algorithms including sorting, searching, and graph algorithms with practical implementations."
+    description:
+      "Comprehensive study of data structures and algorithms including sorting, searching, and graph algorithms with practical implementations.",
   },
   {
     name: "Basics of Web Development",
@@ -340,7 +351,8 @@ export const certificates = [
     date: "2024",
     image: "/cert_imgs/unicornuni.png",
     link: "/cert_pdfs/basicwebdev.pdf",
-    description: "Introduction to HTML, CSS, and JavaScript. Building responsive websites with modern web development practices."
+    description:
+      "Introduction to HTML, CSS, and JavaScript. Building responsive websites with modern web development practices.",
   },
   {
     name: "MongoDB Essentials",
@@ -348,7 +360,16 @@ export const certificates = [
     date: "2024",
     image: "/cert_imgs/unicornuni.png",
     link: "/cert_pdfs/mongodb.pdf",
-    description: "Core concepts of MongoDB database system including CRUD operations, aggregation framework, and data modeling strategies."
+    description:
+      "Core concepts of MongoDB database system including CRUD operations, aggregation framework, and data modeling strategies.",
+  },
+  {
+    name: "Elements of AI",
+    issuer: "University of Helsinki",
+    date: "2025",
+    image: "/cert_imgs/eoaibackground.png",
+    link: "/cert_pdfs/eoai.png",
+    description: "Introduction to AI and its applications.",
   },
   {
     name: "Introduction to Git and GitHub",
@@ -356,7 +377,8 @@ export const certificates = [
     date: "2024",
     image: "/cert_imgs/unicornuni.png",
     link: "/cert_pdfs/git.pdf",
-    description: "Version control fundamentals using Git and GitHub, including branching strategies and collaborative development workflows."
+    description:
+      "Version control fundamentals using Git and GitHub, including branching strategies and collaborative development workflows.",
   },
   {
     name: "Responsive Web Design",
@@ -364,15 +386,17 @@ export const certificates = [
     date: "2024",
     image: "/cert_imgs/freecodecamp.png",
     link: "/cert_pdfs/rwd.png",
-    description: "Creating responsive layouts with CSS flexbox, grid, and media queries to ensure applications work across all device sizes."
+    description:
+      "Creating responsive layouts with CSS flexbox, grid, and media queries to ensure applications work across all device sizes.",
   },
   {
-    name: "React JS",
+    name: "Business English B2-C1",
     issuer: "Unicorn University",
-    date: "2024",
+    date: "2025",
     image: "/cert_imgs/unicornuni.png",
-    link: "/cert_pdfs/react.pdf",
-    description: "Building modern single-page applications with React, including state management, hooks, and component architecture."
+    link: "/cert_pdfs/be6.pdf",
+    description:
+      "Overview of software development practices, methodologies, and lifecycles including Agile, DevOps, and testing approaches.",
   },
   {
     name: "Introduction to Software Development",
@@ -380,7 +404,17 @@ export const certificates = [
     date: "2024",
     image: "/cert_imgs/unicornuni.png",
     link: "/cert_pdfs/itsd.pdf",
-    description: "Overview of software development practices, methodologies, and lifecycles including Agile, DevOps, and testing approaches."
+    description:
+      "Overview of software development practices, methodologies, and lifecycles including Agile, DevOps, and testing approaches.",
+  },
+  {
+    name: "React JS",
+    issuer: "Unicorn University",
+    date: "2024",
+    image: "/cert_imgs/unicornuni.png",
+    link: "/cert_pdfs/react.pdf",
+    description:
+      "Building modern single-page applications with React, including state management, hooks, and component architecture.",
   },
   {
     name: "Programming in JavaScript",
@@ -388,7 +422,8 @@ export const certificates = [
     date: "2024",
     image: "/cert_imgs/unicornuni.png",
     link: "/cert_pdfs/js.pdf",
-    description: "Core JavaScript concepts including DOM manipulation, async programming, and modern ES6+ features."
+    description:
+      "Core JavaScript concepts including DOM manipulation, async programming, and modern ES6+ features.",
   },
   {
     name: "Basics concepts of cybersecurity",
@@ -396,7 +431,8 @@ export const certificates = [
     date: "2025",
     image: "/cert_imgs/unicornuni.png",
     link: "/cert_pdfs/cybersec.pdf",
-    description: "Introduction to information security principles, common vulnerabilities, and defensive measures for web applications."
+    description:
+      "Introduction to information security principles, common vulnerabilities, and defensive measures for web applications.",
   },
   {
     name: "Introduction to software architecture",
@@ -404,7 +440,8 @@ export const certificates = [
     date: "2024",
     image: "/cert_imgs/unicornuni.png",
     link: "/cert_pdfs/itsa.pdf",
-    description: "Understanding architectural patterns, system design principles, and making architectural decisions for scalable solutions."
+    description:
+      "Understanding architectural patterns, system design principles, and making architectural decisions for scalable solutions.",
   },
   {
     name: "IoT Essentials",
@@ -412,7 +449,8 @@ export const certificates = [
     date: "2024",
     image: "/cert_imgs/unicornuni.png",
     link: "/cert_pdfs/iot.pdf",
-    description: "Fundamentals of Internet of Things technologies, protocols, and application design for connected devices."
+    description:
+      "Fundamentals of Internet of Things technologies, protocols, and application design for connected devices.",
   },
   {
     name: "Relational databases",
@@ -420,7 +458,8 @@ export const certificates = [
     date: "2024",
     image: "/cert_imgs/unicornuni.png",
     link: "/cert_pdfs/relational.pdf",
-    description: "Database design, SQL, normalization, transaction management, and performance optimization for relational database systems."
+    description:
+      "Database design, SQL, normalization, transaction management, and performance optimization for relational database systems.",
   },
   {
     name: "IT in business",
@@ -428,7 +467,8 @@ export const certificates = [
     date: "2024",
     image: "/cert_imgs/unicornuni.png",
     link: "/cert_pdfs/itb.pdf",
-    description: "Using information technology to drive business value, align with business strategy, and enable digital transformation."
+    description:
+      "Using information technology to drive business value, align with business strategy, and enable digital transformation.",
   },
   {
     name: "Management",
@@ -436,7 +476,8 @@ export const certificates = [
     date: "2024",
     image: "/cert_imgs/unicornuni.png",
     link: "/cert_pdfs/management.pdf",
-    description: "Principles of project management, team leadership, and organizational behavior in technology environments."
+    description:
+      "Principles of project management, team leadership, and organizational behavior in technology environments.",
   },
   {
     name: "Basic concepts of business",
@@ -444,7 +485,8 @@ export const certificates = [
     date: "2024",
     image: "/cert_imgs/unicornuni.png",
     link: "/cert_pdfs/bcob.pdf",
-    description: "Introduction to business fundamentals including economics, marketing, finance, and strategic planning."
+    description:
+      "Introduction to business fundamentals including economics, marketing, finance, and strategic planning.",
   },
   {
     name: "Elementary functions of mathematics",
@@ -452,7 +494,8 @@ export const certificates = [
     date: "2024",
     image: "/cert_imgs/unicornuni.png",
     link: "/cert_pdfs/elmath.pdf",
-    description: "Study of elementary functions, their properties, graphs, and applications in mathematical problem-solving."
+    description:
+      "Study of elementary functions, their properties, graphs, and applications in mathematical problem-solving.",
   },
   {
     name: "Complex numbers",
@@ -460,7 +503,8 @@ export const certificates = [
     date: "2024",
     image: "/cert_imgs/unicornuni.png",
     link: "/cert_pdfs/complex.pdf",
-    description: "Understanding complex number systems, operations, and their applications in various mathematical and engineering contexts."
+    description:
+      "Understanding complex number systems, operations, and their applications in various mathematical and engineering contexts.",
   },
   {
     name: "Derivatives and Integrals",
@@ -468,7 +512,8 @@ export const certificates = [
     date: "2024",
     image: "/cert_imgs/unicornuni.png",
     link: "/cert_pdfs/calculus.pdf",
-    description: "Calculus concepts focusing on differentiation, integration, and their practical applications in problem-solving."
+    description:
+      "Calculus concepts focusing on differentiation, integration, and their practical applications in problem-solving.",
   },
   {
     name: "Statistics",
@@ -476,7 +521,8 @@ export const certificates = [
     date: "2024",
     image: "/cert_imgs/unicornuni.png",
     link: "/cert_pdfs/statistics.pdf",
-    description: "Statistical methods for data analysis including probability, hypothesis testing, regression, and data visualization."
+    description:
+      "Statistical methods for data analysis including probability, hypothesis testing, regression, and data visualization.",
   },
   {
     name: "uu5 - Intern framework",
@@ -484,7 +530,8 @@ export const certificates = [
     date: "2025",
     image: "/cert_imgs/unicornuni.png",
     link: "/cert_pdfs/uu5.pdf",
-    description: "Building applications with Unicorn's proprietary uu5 framework, focused on component-based frontend development."
+    description:
+      "Building applications with Unicorn's proprietary uu5 framework, focused on component-based frontend development.",
   },
   {
     name: "uuAppServer - Intern framework",
@@ -492,7 +539,8 @@ export const certificates = [
     date: "2024",
     image: "/cert_imgs/unicornuni.png",
     link: "/cert_pdfs/uuapps.pdf",
-    description: "Server-side development using Unicorn's uuAppServer framework for creating scalable business applications."
+    description:
+      "Server-side development using Unicorn's uuAppServer framework for creating scalable business applications.",
   },
   {
     name: "Business English",
@@ -500,6 +548,7 @@ export const certificates = [
     date: "2024",
     image: "/cert_imgs/unicornuni.png",
     link: "/cert_pdfs/be.pdf",
-    description: "Professional English communication skills for business environments, technical documentation, and presentations."
+    description:
+      "Professional English communication skills for business environments, technical documentation, and presentations.",
   },
 ];
