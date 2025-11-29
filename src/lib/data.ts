@@ -67,7 +67,7 @@ export const experience = [
     location: "Brno, Czech Republic",
     period: "June 2024 - Present",
     description:
-      "Creating manuals for students for python and web development course. Remote work.",
+      "Creating manuals for students for python and web development courses, and teaching students remotely. (full-remote)",
     technologies: [
       "HTML",
       "CSS",
@@ -217,6 +217,16 @@ export const projects = [
     liveLink: "-",
     repoLink: "https://github.com/sknefi/ai_uu/tree/main/p_02/uloha",
   },
+
+  {
+    title: "Cub3D",
+    description:
+      "42 project where you build a simple 3D game engine using ray-casting, similar to Wolfenstein 3D. You render a world from a 2D map, handle textures, movement, collisions, and create an immersive first-person experience.",
+    image: "/projects/cub3d.png",
+    technologies: ["C", "Git", "MLX42"],
+    liveLink: "-",
+    repoLink: "https://github.com/sknefi/cub3D/",
+  },
   {
     title: "Lumberjack Jano",
     description:
@@ -288,6 +298,15 @@ export const projects = [
     technologies: ["C"],
     liveLink: "-",
     repoLink: "https://github.com/sknefi/minitalk",
+  },
+  {
+    title: "Net practice",
+    description:
+      "42 project where you fix broken network setups by configuring IPs, subnet masks, and routing. It teaches practical networking logic through interactive puzzles that simulate real connectivity issues",
+    image: "/projects/net_practise.png",
+    technologies: ["Networking", "Subnetting"],
+    liveLink: "-",
+    repoLink: "https://github.com/sknefi/net_practice",
   },
   {
     title: "Other small projects",
