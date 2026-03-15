@@ -1,6 +1,6 @@
 export const personalInfo = {
   name: "Filip Karika",
-  title: "Full Stack Developer",
+  title: "Full-Stack Developer",
   email: "filip.karika1@gmail.com",
   phone: "+420 725 250 010",
   location: "Prague, Czech Republic",
@@ -23,33 +23,31 @@ export const skills = {
     { name: "VS Code", icon: "vscode" },
     { name: "ChatGPT", icon: "chatgpt" },
     { name: "LinkedIn", icon: "linkedin" },
-    { name: "Slack", icon: "slack" },
-    { name: "Discord", icon: "discord" },
-    { name: "GitHub Copilot", icon: "githubcopilot" },
     { name: "Git", icon: "git" },
     { name: "GitHub", icon: "github" },
   ],
   proficient: [
     { name: "HTML", icon: "html" },
     { name: "CSS", icon: "css" },
-    { name: "JavaScript", icon: "javascript" },
     { name: "Bootstrap", icon: "bootstrap" },
     { name: "HTMX", icon: "htmx" },
+	{ name: "React", icon: "react" },
+	{ name: "React Bootstrap", icon: "reactbootstrap" },
+	{ name: "JWT", icon: "jwt" },
+	{ name: "npm", icon: "npm" },
     { name: "Python", icon: "python" },
     { name: "Arduino", icon: "arduino" },
-  ],
-  webDevelopment: [
-    { name: "React", icon: "react" },
-    { name: "React Bootstrap", icon: "reactbootstrap" },
+],
+webDevelopment: [
+	{ name: "JavaScript", icon: "javascript" },
     { name: "Node.js", icon: "nodejs" },
     { name: "Express.js", icon: "expressjs" },
     { name: "MongoDB", icon: "mongodb" },
     { name: "Mongoose", icon: "mongoose" },
     { name: "Insomnia", icon: "insomnia" },
     { name: "Postman", icon: "postman" },
+	{ name: "Docker", icon: "docker"},
     { name: "JSON", icon: "json" },
-    { name: "JWT", icon: "jwt" },
-    { name: "npm", icon: "npm" },
   ],
   lowLevel: [
     { name: "C", icon: "c" },
@@ -166,6 +164,15 @@ export const projects = [
     repoLink: "https://github.com/sknefi/safehome",
   },
   {
+    title: "Design patterns in Java",
+    description:
+      "Implementation some of the mostpopular design patterns in Java.",
+    image: "/projects/javadp.png",
+    technologies: ["Java"],
+    liveLink: "-",
+    repoLink: "https://github.com/sknefi/design_patterns",
+  },
+  {
     title: "FdF (Fil Der Fer)",
     description:
       "3D rendering of a 3D model of a 3D object. Projection from 3D model to 2D image using MLX42 library.",
@@ -175,13 +182,22 @@ export const projects = [
     repoLink: "https://github.com/sknefi/FdF",
   },
   {
-    title: "Design patterns in Java",
+    title: "Internet Relay Chat",
     description:
-      "Implementation some of the mostpopular design patterns in Java.",
-    image: "/projects/javadp.png",
-    technologies: ["Java"],
+      "Application acting as a hub that facilitates real-time, text-based communication between users",
+    image: "/projects/irc.png",
+    technologies: ["C++", "Git"],
     liveLink: "-",
-    repoLink: "https://github.com/sknefi/design_patterns",
+    repoLink: "https://github.com/sknefi/irc",
+  },
+  {
+    title: "C++98 Modules",
+    description:
+      "Application acting as a hub that facilitates real-time, text-based communication between users",
+    image: "/projects/cppmodules.png",
+    technologies: ["C++", "Git"],
+    liveLink: "https://github.com/sknefi/cpp_00-04",
+    repoLink: "https://github.com/sknefi/cpp_05-09",
   },
   {
     title: "MeetUs",
@@ -291,13 +307,13 @@ export const projects = [
     repoLink: "https://github.com/sknefi/libft_divinus",
   },
   {
-    title: "Minitalk",
+    title: "Inception - Docker",
     description:
-      "Creating a simple client-server application using signals. The client sends a message to the server and the server sends a response back to the client.",
-    image: "/projects/minitalk.png",
-    technologies: ["C"],
+      "42 system administration project where you build a small web infrastructure using Docker Compose, with each service running in its own container",
+    image: "/projects/inception.png",
+    technologies: ["Docker", "Docker-compose", "Dockerfile", "Nginx", "MariaDB", "Wordpress"],
     liveLink: "-",
-    repoLink: "https://github.com/sknefi/minitalk",
+    repoLink: "https://github.com/sknefi/inception",
   },
   {
     title: "Net practice",
@@ -307,6 +323,15 @@ export const projects = [
     technologies: ["Networking", "Subnetting"],
     liveLink: "-",
     repoLink: "https://github.com/sknefi/net_practice",
+  },
+  {
+    title: "Minitalk",
+    description:
+      "Creating a simple client-server application using signals. The client sends a message to the server and the server sends a response back to the client.",
+    image: "/projects/minitalk.png",
+    technologies: ["C"],
+    liveLink: "-",
+    repoLink: "https://github.com/sknefi/minitalk",
   },
   {
     title: "Other small projects",
