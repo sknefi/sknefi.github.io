@@ -44,6 +44,45 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
+  .dark {
+    --background: 222 47% 8%;
+    --foreground: 210 40% 96%;
+
+    --card: 222 39% 12%;
+    --card-foreground: 210 40% 96%;
+
+    --popover: 222 39% 12%;
+    --popover-foreground: 210 40% 96%;
+
+    --primary: 199 89% 58%;
+    --primary-foreground: 222 47% 8%;
+
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 96%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 72%;
+
+    --accent: 172 66% 45%;
+    --accent-foreground: 222 47% 8%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 22%;
+    --input: 217 33% 22%;
+    --ring: 199 89% 58%;
+
+    --sidebar-background: 222 47% 8%;
+    --sidebar-foreground: 210 40% 96%;
+    --sidebar-primary: 199 89% 58%;
+    --sidebar-primary-foreground: 222 47% 8%;
+    --sidebar-accent: 217 33% 17%;
+    --sidebar-accent-foreground: 210 40% 96%;
+    --sidebar-border: 217 33% 22%;
+    --sidebar-ring: 199 89% 58%;
+  }
+
   * {
     @apply border-border;
     scroll-behavior: smooth;
@@ -51,6 +90,10 @@
 
   body {
     @apply bg-background text-foreground antialiased font-sans;
+  }
+
+  .dark body {
+    color-scheme: dark;
   }
 
   .section-padding {
@@ -80,7 +123,7 @@
   }
 
   .skill-card {
-    @apply flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300;
+    @apply flex flex-col items-center justify-center p-4 bg-card text-card-foreground rounded-lg border border-border shadow-sm hover:border-portfolio-blue/60 hover:shadow-md transition duration-300;
   }
 }
 
@@ -90,7 +133,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: theme('colors.gray.100');
+  background: hsl(var(--background));
 }
 
 ::-webkit-scrollbar-thumb {

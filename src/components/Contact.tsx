@@ -69,17 +69,17 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="section-padding bg-white">
+    <section id="contact" className="section-padding bg-background">
       <div className="container mx-auto">
         <h2 className="section-title">Get In Touch</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
-            <p className="text-gray-700 mb-8">
+            <p className="text-muted-foreground mb-8">
               Feel free to reach out if you're looking for a developer, have a
               question, or just want to connect.
             </p>
-            <p className="text-gray-700 mb-8">
+            <p className="text-muted-foreground mb-8">
               Or if you just enjoy my portfolio you can let me know! 😇
             </p>
 
@@ -94,7 +94,7 @@ const Contact = () => {
                   <h3 className="text-lg font-semibold">Email</h3>
                   <a
                     href={`mailto:${personalInfo.email}`}
-                    className="text-gray-700 hover:text-portfolio-blue transition-colors"
+                    className="text-muted-foreground hover:text-portfolio-blue transition-colors"
                   >
                     {personalInfo.email}
                   </a>
@@ -111,7 +111,7 @@ const Contact = () => {
                   <h3 className="text-lg font-semibold">Phone</h3>
                   <a
                     href={`tel:${personalInfo.phone}`}
-                    className="text-gray-700 hover:text-portfolio-blue transition-colors"
+                    className="text-muted-foreground hover:text-portfolio-blue transition-colors"
                   >
                     {personalInfo.phone}
                   </a>
@@ -126,16 +126,16 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold">Location</h3>
-                  <p className="text-gray-700">{personalInfo.location}</p>
+                  <p className="text-muted-foreground">{personalInfo.location}</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="bg-gray-50 p-8 rounded-lg">
+          <div className="bg-card border border-border p-8 rounded-lg">
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
-                <label htmlFor="name" className="block text-gray-700 mb-2">
+                <label htmlFor="name" className="block text-foreground mb-2">
                   Name
                 </label>
                 <input
@@ -145,12 +145,12 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full rounded-md border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-portfolio-blue focus:border-transparent"
+                  className="w-full rounded-md border border-input bg-background px-4 py-2 text-foreground focus:outline-none focus:ring-2 focus:ring-portfolio-blue focus:border-transparent"
                 />
               </div>
 
               <div className="mb-4">
-                <label htmlFor="email" className="block text-gray-700 mb-2">
+                <label htmlFor="email" className="block text-foreground mb-2">
                   Email
                 </label>
                 <input
@@ -160,12 +160,12 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full rounded-md border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-portfolio-blue focus:border-transparent"
+                  className="w-full rounded-md border border-input bg-background px-4 py-2 text-foreground focus:outline-none focus:ring-2 focus:ring-portfolio-blue focus:border-transparent"
                 />
               </div>
 
               <div className="mb-4">
-                <label htmlFor="subject" className="block text-gray-700 mb-2">
+                <label htmlFor="subject" className="block text-foreground mb-2">
                   Subject
                 </label>
                 <input
@@ -175,12 +175,12 @@ const Contact = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full rounded-md border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-portfolio-blue focus:border-transparent"
+                  className="w-full rounded-md border border-input bg-background px-4 py-2 text-foreground focus:outline-none focus:ring-2 focus:ring-portfolio-blue focus:border-transparent"
                 />
               </div>
 
               <div className="mb-6">
-                <label htmlFor="message" className="block text-gray-700 mb-2">
+                <label htmlFor="message" className="block text-foreground mb-2">
                   Message
                 </label>
                 <textarea
@@ -190,7 +190,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full rounded-md border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-portfolio-blue focus:border-transparent"
+                  className="w-full rounded-md border border-input bg-background px-4 py-2 text-foreground focus:outline-none focus:ring-2 focus:ring-portfolio-blue focus:border-transparent"
                 ></textarea>
               </div>
 

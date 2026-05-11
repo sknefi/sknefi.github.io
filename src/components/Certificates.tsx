@@ -31,25 +31,25 @@ const Certificates = () => {
   };
 
   return (
-    <section id="certificates" className="section-padding bg-gray-50">
+    <section id="certificates" className="section-padding bg-muted/30">
       <div className="container mx-auto">
         <h2 className="section-title">Certificates</h2>
         
         <div className="mb-6 relative">
           <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-            <Search className="h-5 w-5 text-gray-400" />
+            <Search className="h-5 w-5 text-muted-foreground" />
           </div>
           <input
             type="text"
             placeholder="Search certificates..."
-            className="pl-10 w-full md:w-64 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-portfolio-blue"
+            className="pl-10 w-full md:w-64 p-2 border border-input bg-background text-foreground placeholder:text-muted-foreground rounded-lg focus:outline-none focus:ring-2 focus:ring-portfolio-blue"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
         </div>
 
         {filteredCertificates.length === 0 ? (
-          <div className="text-center py-8 text-gray-500">
+          <div className="text-center py-8 text-muted-foreground">
             No certificates found matching your search.
           </div>
         ) : (
@@ -61,9 +61,9 @@ const Certificates = () => {
                   <Dialog key={index}>
                     <DialogTrigger asChild>
                       <div 
-                        className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer"
+                        className="bg-card text-card-foreground rounded-lg border border-border shadow-sm overflow-hidden hover:border-portfolio-blue/60 hover:shadow-lg transition duration-300 cursor-pointer"
                       >
-                        <div className="h-40 bg-gray-200 overflow-hidden">
+                        <div className="h-40 bg-muted overflow-hidden">
                           <img
                             src={certificate.image}
                             alt={certificate.issuer}
@@ -71,14 +71,14 @@ const Certificates = () => {
                           />
                         </div>
                         <div className="p-4">
-                          <h3 className="font-bold text-lg mb-1 text-gray-800 line-clamp-2">
+                          <h3 className="font-bold text-lg mb-1 text-card-foreground line-clamp-2">
                             {certificate.name}
                           </h3>
                           <div className="flex justify-between items-center">
-                            <span className="text-sm text-gray-600">
+                            <span className="text-sm text-muted-foreground">
                               {certificate.issuer}
                             </span>
-                            <span className="text-xs font-medium bg-portfolio-light-blue text-portfolio-blue px-2 py-1 rounded-full">
+                            <span className="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">
                               {certificate.date}
                             </span>
                           </div>
@@ -93,12 +93,12 @@ const Certificates = () => {
                         </DialogDescription>
                       </DialogHeader>
                       <div className="flex flex-col items-center">
-                        <p className="text-gray-700 mb-4 text-center">
+                        <p className="text-muted-foreground mb-4 text-center">
                           {certificate.description}
                         </p>
                         <div className="my-4 max-h-96 overflow-hidden">
                           {certificate.link.endsWith('.pdf') ? (
-                            <div className="bg-gray-100 p-6 rounded-lg flex flex-col items-center w-full">
+                            <div className="bg-muted p-6 rounded-lg flex flex-col items-center w-full">
                               <object
                                 data={`${certificate.link}#page=1&view=FitH`}
                                 type="application/pdf"

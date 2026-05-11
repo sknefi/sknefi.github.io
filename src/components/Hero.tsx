@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col items-center justify-center pt-16 bg-gradient-to-br from-white to-portfolio-light-blue/30"
+      className="min-h-screen flex flex-col items-center justify-center pt-16 bg-gradient-to-br from-background via-background to-portfolio-light-blue/30 dark:to-slate-900"
     >
       <div className="container mx-auto px-6 text-center">
         <div className="inline-block animate-wave origin-bottom-right mb-4">
@@ -19,11 +19,11 @@ const Hero = () => {
 
         <div className="w-16 h-1 bg-portfolio-blue mx-auto mb-6"></div>
 
-        <h2 className="text-xl md:text-2xl text-gray-700 mb-8 animate-slide-up">
+        <h2 className="text-xl md:text-2xl text-muted-foreground mb-8 animate-slide-up">
           <span className="typed-text">{personalInfo.title}</span>
         </h2>
 
-        <p className="max-w-2xl mx-auto text-gray-600 mb-10 animate-slide-up">
+        <p className="max-w-2xl mx-auto text-muted-foreground mb-10 animate-slide-up">
           {personalInfo.bio}
         </p>
 
@@ -41,7 +41,7 @@ const Hero = () => {
             href={personalInfo.socialLinks.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-600 hover:text-portfolio-blue transition-colors"
+            className="text-muted-foreground hover:text-portfolio-blue transition-colors"
             aria-label="GitHub"
           >
             <Github size={24} />
@@ -50,7 +50,7 @@ const Hero = () => {
             href={personalInfo.socialLinks.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-600 hover:text-portfolio-blue transition-colors"
+            className="text-muted-foreground hover:text-portfolio-blue transition-colors"
             aria-label="LinkedIn"
           >
             <Linkedin size={24} />
@@ -60,7 +60,7 @@ const Hero = () => {
               href={personalInfo.socialLinks.instagram}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-portfolio-blue transition-colors"
+              className="text-muted-foreground hover:text-portfolio-blue transition-colors"
               aria-label="Instagram"
             >
               <Instagram size={24} />

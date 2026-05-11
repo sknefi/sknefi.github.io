@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,15 +36,15 @@ const Header = () => {
     <header
       className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-white/90 shadow-md backdrop-blur-md py-4"
+          ? "bg-background/90 border-b border-border shadow-sm backdrop-blur-md py-4"
           : "bg-transparent py-6"
       }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         <a href="#home" className="text-xl font-bold text-portfolio-blue">
-          <span className="text-portfolio-dark"> &lt;/</span>
-          Filip<span className="text-portfolio-dark">Karika</span>
-          <span className="text-portfolio-dark">&gt;</span>
+          <span className="text-foreground"> &lt;/</span>
+          Filip<span className="text-foreground">Karika</span>
+          <span className="text-foreground">&gt;</span>
         </a>
 
         {/* Desktop Navigation */}
@@ -55,23 +56,30 @@ const Header = () => {
           ))}
         </nav>
 
+        <div className="hidden lg:block">
+          <ThemeToggle />
+        </div>
+
         {/* Mobile Menu Button */}
-        <button
-          className="lg:hidden text-gray-700 hover:text-portfolio-blue transition-colors"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          aria-label="Toggle menu"
-        >
-          {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="flex items-center gap-3 lg:hidden">
+          <ThemeToggle />
+          <button
+            className="text-foreground hover:text-portfolio-blue transition-colors"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <nav className="absolute top-full left-0 right-0 flex flex-col bg-white shadow-lg py-4 lg:hidden animate-fade-in">
+          <nav className="absolute top-full left-0 right-0 flex flex-col bg-background border-b border-border shadow-lg py-4 lg:hidden animate-fade-in">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="px-6 py-3 hover:bg-gray-50 hover:text-portfolio-blue transition-colors"
+                className="px-6 py-3 hover:bg-muted hover:text-portfolio-blue transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {link.name}

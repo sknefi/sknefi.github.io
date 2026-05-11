@@ -3,29 +3,29 @@ import { Mail, MapPin, Phone } from "lucide-react";
 
 const About = () => {
   return (
-    <section id="about" className="section-padding bg-white">
+    <section id="about" className="section-padding bg-background">
       <div className="container mx-auto">
         <h2 className="section-title">About Me</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
             <div className="max-w-[1042px]:hidden">
-              <p className="text-gray-700 mb-6">
+              <p className="text-muted-foreground mb-6">
                 {personalInfo.bio}
               </p>
-              <p className="text-gray-700 mb-6">
+              <p className="text-muted-foreground mb-6">
                 I'm constantly learning and exploring new technologies to stay at the cutting edge of web development. My goal is to create efficient, scalable, and user-friendly applications that solve real-world problems.
               </p>
             </div>
 
             <div className="hidden max-w-[1042px]:block mb-6">
-              <p className="text-gray-700 mb-3">
+              <p className="text-muted-foreground mb-3">
                 Full-stack developer passionate about creating innovative solutions.
               </p>
-              <p className="text-gray-700 mb-3">
+              <p className="text-muted-foreground mb-3">
                 Experienced in modern web technologies and best practices.
               </p>
-              <p className="text-gray-700 mb-6">
+              <p className="text-muted-foreground mb-6">
                 Committed to delivering efficient and user-friendly applications.
               </p>
             </div>
@@ -33,19 +33,19 @@ const About = () => {
             <div className="flex flex-col space-y-4 mb-8">
               <div className="flex items-center">
                 <Mail size={18} className="text-portfolio-blue mr-3" />
-                <a href={`mailto:${personalInfo.email}`} className="text-gray-700 hover:text-portfolio-blue transition-colors">
+                <a href={`mailto:${personalInfo.email}`} className="text-muted-foreground hover:text-portfolio-blue transition-colors">
                   {personalInfo.email}
                 </a>
               </div>
               <div className="flex items-center">
                 <Phone size={18} className="text-portfolio-blue mr-3" />
-                <a href={`tel:${personalInfo.phone}`} className="text-gray-700 hover:text-portfolio-blue transition-colors">
+                <a href={`tel:${personalInfo.phone}`} className="text-muted-foreground hover:text-portfolio-blue transition-colors">
                   {personalInfo.phone}
                 </a>
               </div>
               <div className="flex items-center">
                 <MapPin size={18} className="text-portfolio-blue mr-3" />
-                <span className="text-gray-700">{personalInfo.location}</span>
+                <span className="text-muted-foreground">{personalInfo.location}</span>
               </div>
             </div>
             
@@ -59,11 +59,11 @@ const About = () => {
                 <div key={index} className="border-l-2 border-portfolio-blue pl-4">
                   <h4 className="text-lg font-semibold">{edu.degree}</h4>
                   <h5 className="text-portfolio-blue mb-1">{edu.institution}</h5>
-                  <div className="flex justify-between text-gray-500 mb-2">
+                  <div className="flex justify-between text-muted-foreground mb-2">
                     <span>{edu.location}</span>
                     <span>{edu.period}</span>
                   </div>
-                  <p className="text-gray-700">{edu.description}</p>
+                  <p className="text-muted-foreground">{edu.description}</p>
                 </div>
               ))}
             </div>

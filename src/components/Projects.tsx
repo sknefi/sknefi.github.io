@@ -3,7 +3,7 @@ import { ExternalLink, Github } from "lucide-react";
 
 const Projects = () => {
   return (
-    <section id="projects" className="section-padding bg-gray-50">
+    <section id="projects" className="section-padding bg-muted/30">
       <div className="container mx-auto">
         <h2 className="section-title">My Projects</h2>
         
@@ -11,7 +11,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div 
               key={index} 
-              className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
+              className="bg-card text-card-foreground rounded-lg overflow-hidden border border-border shadow-sm hover:border-portfolio-blue/60 hover:shadow-lg transition duration-300"
             >
               <div className="relative h-84 overflow-hidden">
                 <img 
@@ -23,13 +23,13 @@ const Projects = () => {
               
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                <p className="text-gray-700 mb-4">{project.description}</p>
+                <p className="text-muted-foreground mb-4">{project.description}</p>
                 
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.technologies.map((tech, techIndex) => (
                     <span 
                       key={techIndex} 
-                      className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full"
+                      className="px-3 py-1 bg-muted text-muted-foreground text-sm rounded-full"
                     >
                       {tech}
                     </span>

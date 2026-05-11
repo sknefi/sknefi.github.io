@@ -1,14 +1,18 @@
 import { skills } from "@/lib/data";
+import { useTheme } from "next-themes";
 
 const Skills = () => {
+  const { resolvedTheme } = useTheme();
+
   // Function to get skill icon URL
   const getSkillIconUrl = (iconName: string) => {
-	const path = `https://go-skill-icons.vercel.app/api/icons?i=${iconName}&theme=light`;
+	const iconTheme = resolvedTheme === "dark" ? "dark" : "light";
+	const path = `https://go-skill-icons.vercel.app/api/icons?i=${iconName}&theme=${iconTheme}`;
 	return path;
   };
 
   return (
-    <section id="skills" className="section-padding bg-gray-50">
+    <section id="skills" className="section-padding bg-muted/30">
       <div className="container mx-auto">
         <h2 className="section-title">My Skills</h2>
 
@@ -24,7 +28,7 @@ const Skills = () => {
                     className="max-h-full max-w-full object-contain"
                   />
                 </div>
-                <span className="text-gray-700">{skill.name}</span>
+                <span className="text-muted-foreground">{skill.name}</span>
               </div>
             ))}
           </div>
@@ -42,7 +46,7 @@ const Skills = () => {
                     className="max-h-full max-w-full object-contain"
                   />
                 </div>
-                <span className="text-gray-700">{skill.name}</span>
+                <span className="text-muted-foreground">{skill.name}</span>
               </div>
             ))}
           </div>
@@ -63,7 +67,7 @@ const Skills = () => {
                     className="max-h-full max-w-full object-contain"
                   />
                 </div>
-				<span className="text-gray-700">{skill.name}</span>
+				<span className="text-muted-foreground">{skill.name}</span>
               </div>
             ))}
           </div>
@@ -83,7 +87,7 @@ const Skills = () => {
                     className="max-h-full max-w-full object-contain"
                   />
                 </div>
-                <span className="text-gray-700">{skill.name}</span>
+                <span className="text-muted-foreground">{skill.name}</span>
               </div>
             ))}
           </div>
