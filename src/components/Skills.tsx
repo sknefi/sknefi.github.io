@@ -10,6 +10,7 @@ const Skills = () => {
   };
 
   const skillGroups = [
+    { title: "Main Stack", items: skills.mainStack },
     { title: "Daily Tools", items: skills.daily },
     { title: "Frontend", items: skills.frontend },
     { title: "Backend & Data", items: skills.backendData },
@@ -25,7 +26,11 @@ const Skills = () => {
           {skillGroups.map((group) => (
             <div
               key={group.title}
-              className="grid gap-4 rounded-lg border border-border bg-card/80 p-4 md:grid-cols-[11rem_1fr] md:items-start"
+              className={`grid gap-4 rounded-lg border p-4 md:grid-cols-[11rem_1fr] md:items-start ${
+                group.title === "Main Stack"
+                  ? "border-portfolio-blue/60 bg-primary/10 shadow-[0_0_30px_rgba(14,165,233,0.12)]"
+                  : "border-border bg-card/80"
+              }`}
             >
               <div>
                 <h3 className="text-sm font-semibold uppercase tracking-wide text-portfolio-blue">

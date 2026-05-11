@@ -19,6 +19,14 @@ export const emailInfo = {
 };
 
 export const skills = {
+  mainStack: [
+    { name: "MongoDB", icon: "mongodb" },
+    { name: "Express.js", icon: "expressjs" },
+    { name: "React", icon: "react" },
+    { name: "Node.js", icon: "nodejs" },
+    { name: "TypeScript", icon: "typescript" },
+    { name: "Docker", icon: "docker" },
+  ],
   daily: [
     { name: "Cursor", icon: "cursor" },
     { name: "ChatGPT", icon: "chatgpt" },
