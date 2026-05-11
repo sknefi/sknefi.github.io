@@ -2,7 +2,7 @@ import { personalInfo } from "@/lib/data";
 import { ArrowUp, Github, Instagram, Linkedin, Twitter } from "lucide-react";
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
+  const createdInYear = 2025;
 
   return (
     <footer className="bg-gray-900 text-white py-12">
@@ -54,7 +54,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
           <p>
-            © {currentYear} {personalInfo.name}. All rights reserved.
+            © {createdInYear} {personalInfo.name}. All rights reserved.
           </p>
           <p className="mt-2 text-sm">Designed and built with 🤍</p>
         </div>

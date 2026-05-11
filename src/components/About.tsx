@@ -11,10 +11,19 @@ const About = () => {
           <div>
             <div className="max-w-[1042px]:hidden">
               <p className="text-muted-foreground mb-6">
-                {personalInfo.bio}
+                I like working on the server-side parts of applications: designing APIs, connecting databases, handling authentication, and making sure the system is maintainable beyond the first working version.
               </p>
               <p className="text-muted-foreground mb-6">
-                I'm constantly learning and exploring new technologies to stay at the cutting edge of web development. My goal is to create efficient, scalable, and user-friendly applications that solve real-world problems.
+                I am also interested in DevOps, deployment, Docker, Linux environments, and the practical details that make projects reliable in production. My goal is to build software that is clear, useful, and easy to improve over time.
+              </p>
+              <p className="text-muted-foreground mb-6">
+                AI is part of my daily workflow, and I am especially interested in practical AI tooling such as MCPs, RAG systems, and ways to connect language models with real applications, data, and developer workflows.
+              </p>
+              <p className="text-muted-foreground mb-6">
+                I try to push myself every day, contribute to software consistently, and keep improving while studying at university and 42 Prague. I am in my 20s, building discipline, experience, and technical depth step by step.
+              </p>
+              <p className="text-muted-foreground mb-6">
+                In the future, I want to start my own startup and experience the full startup journey from the beginning.
               </p>
             </div>
 

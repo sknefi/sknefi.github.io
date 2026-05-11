@@ -1,5 +1,5 @@
 import { experience } from "@/lib/data";
-import { Briefcase } from "lucide-react";
+import { Briefcase, Download } from "lucide-react";
 
 const Experience = () => {
   return (
@@ -49,14 +49,16 @@ const Experience = () => {
             download="Filip Karika CV.pdf"
             className="btn-outline inline-flex items-center"
           >
-            <span>Download Full CV</span>
+            <span>CV</span>
+            <Download size={16} className="ml-2" />
           </a>
           <a 
             href="/fk_ml.pdf" 
             download="Filip Karika Motivational Letter.pdf"
             className="btn-outline inline-flex items-center"
           >
-            <span>Download Motivational Letter</span>
+            <span>Motivational Letter</span>
+            <Download size={16} className="ml-2" />
           </a>
         </div>
       </div>

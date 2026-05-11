@@ -4,7 +4,7 @@ export const personalInfo = {
   email: "filip.karika1@gmail.com",
   phone: "+420 725 250 010",
   location: "Prague, Czech Republic",
-  bio: "I'm a 22-year-old passionate web developer with expertise in full-stack development. I love building responsive and user-friendly web applications using modern technologies. Currently looking for new opportunities to grow and contribute to innovative projects.",
+  bio: "I'm a 22-year-old full-stack developer with a strong focus on backend development and DevOps. I enjoy building reliable, scalable applications, working with APIs, databases, infrastructure, and modern deployment workflows. Currently looking for new opportunities to grow and contribute to innovative projects.",
   socialLinks: {
     github: "https://github.com/sknefi",
     linkedin: "https://www.linkedin.com/in/filip-karika-13b5072b0/",
@@ -145,6 +145,26 @@ export const projects = [
     repoLink: "https://lionscz.cz/",
   },
   {
+    title: "AI Collaborative Workspace",
+    description:
+      "42 ft_transcendence project built as an invite-only collaborative workspace. It combines organizations, projects, channels, real-time chat, direct messages, scoped document management, AI-assisted retrieval over uploaded documents, and role-based access control into one coherent internal collaboration tool.",
+    image: "/projects/transcendence.png",
+    technologies: [
+      "Full-stack",
+      "AI",
+      "RAG",
+      "Real-time Chat",
+      "Direct Messages",
+      "Document Management",
+      "RBAC",
+      "Organizations",
+      "Projects",
+      "Channels",
+    ],
+    liveLink: "-",
+    repoLink: "https://github.com/sknefi/transcendence",
+  },
+  {
     title: "Minishell",
     description:
       "Copy of the bash shell. It is a command line interpreter that allows you to execute commands and programs.",
@@ -233,6 +253,15 @@ export const projects = [
     technologies: ["HTML", "CSS"],
     liveLink: "-",
     repoLink: "https://github.com/sknefi/Creative-Agency",
+  },
+  {
+    title: "Net practice",
+    description:
+      "42 project where you fix broken network setups by configuring IPs, subnet masks, and routing. It teaches practical networking logic through interactive puzzles that simulate real connectivity issues",
+    image: "/projects/net_practise.png",
+    technologies: ["Networking", "Subnetting"],
+    liveLink: "-",
+    repoLink: "https://github.com/sknefi/net_practice",
   },
   {
     title: "Schelling's segregation",
@@ -324,15 +353,6 @@ export const projects = [
     technologies: ["Docker", "Docker-compose", "Dockerfile", "Nginx", "MariaDB", "Wordpress"],
     liveLink: "-",
     repoLink: "https://github.com/sknefi/inception",
-  },
-  {
-    title: "Net practice",
-    description:
-      "42 project where you fix broken network setups by configuring IPs, subnet masks, and routing. It teaches practical networking logic through interactive puzzles that simulate real connectivity issues",
-    image: "/projects/net_practise.png",
-    technologies: ["Networking", "Subnetting"],
-    liveLink: "-",
-    repoLink: "https://github.com/sknefi/net_practice",
   },
   {
     title: "Minitalk",
