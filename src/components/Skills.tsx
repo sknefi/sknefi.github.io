@@ -4,93 +4,50 @@ import { useTheme } from "next-themes";
 const Skills = () => {
   const { resolvedTheme } = useTheme();
 
-  // Function to get skill icon URL
   const getSkillIconUrl = (iconName: string) => {
-	const iconTheme = resolvedTheme === "dark" ? "dark" : "light";
-	const path = `https://go-skill-icons.vercel.app/api/icons?i=${iconName}&theme=${iconTheme}`;
-	return path;
+    const iconTheme = resolvedTheme === "dark" ? "dark" : "light";
+    return `https://go-skill-icons.vercel.app/api/icons?i=${iconName}&theme=${iconTheme}`;
   };
+
+  const skillGroups = [
+    { title: "Daily Tools", items: skills.daily },
+    { title: "Frontend", items: skills.frontend },
+    { title: "Backend & Data", items: skills.backendData },
+    { title: "Systems", items: skills.systems },
+  ];
 
   return (
     <section id="skills" className="section-padding bg-muted/30">
       <div className="container mx-auto">
         <h2 className="section-title">My Skills</h2>
 
-        <div className="mb-12">
-          <h3 className="text-2xl font-bold mb-6">On Daily Basis I Use:</h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
-            {skills.daily.map((skill, index) => (
-              <div key={index} className="skill-card">
-                <div className="h-12 w-12 flex items-center justify-center mb-3">
-                  <img
-                    src={getSkillIconUrl(skill.icon)}
-                    alt={skill.name}
-                    className="max-h-full max-w-full object-contain"
-                  />
-                </div>
-                <span className="text-muted-foreground">{skill.name}</span>
+        <div className="space-y-5">
+          {skillGroups.map((group) => (
+            <div
+              key={group.title}
+              className="grid gap-4 rounded-lg border border-border bg-card/80 p-4 md:grid-cols-[11rem_1fr] md:items-start"
+            >
+              <div>
+                <h3 className="text-sm font-semibold uppercase tracking-wide text-portfolio-blue">
+                  {group.title}
+                </h3>
               </div>
-            ))}
-          </div>
-        </div>
 
-        <div className="mb-12">
-          <h3 className="text-2xl font-bold mb-6">I Am Good At:</h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
-            {skills.proficient.map((skill, index) => (
-              <div key={index} className="skill-card">
-                <div className="h-12 w-12 flex items-center justify-center mb-3">
-                  <img
-                    src={getSkillIconUrl(skill.icon)}
-                    alt={skill.name}
-                    className="max-h-full max-w-full object-contain"
-                  />
-                </div>
-                <span className="text-muted-foreground">{skill.name}</span>
+              <div className="flex flex-wrap gap-2.5">
+                {group.items.map((skill) => (
+                  <div key={skill.name} className="skill-chip">
+                    <img
+                      src={getSkillIconUrl(skill.icon)}
+                      alt=""
+                      aria-hidden="true"
+                      className="h-5 w-5 object-contain"
+                    />
+                    <span>{skill.name}</span>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="mb-12">
-          <h3 className="text-2xl font-bold mb-6">
-            My Main Specialization - Web Development:
-          </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
-            {skills.webDevelopment.map((skill, index) => (
-			
-			  <div key={index} className="skill-card">
-                <div className="h-12 w-12 flex items-center justify-center mb-3">
-                  <img
-                    src={getSkillIconUrl(skill.icon)}
-                    alt={skill.name}
-                    className="max-h-full max-w-full object-contain"
-                  />
-                </div>
-				<span className="text-muted-foreground">{skill.name}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div>
-          <h3 className="text-2xl font-bold mb-6">
-            My Main Specialization - Low-level Development:
-          </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-6">
-            {skills.lowLevel.map((skill, index) => (
-              <div key={index} className="skill-card">
-                <div className="h-12 w-12 flex items-center justify-center mb-3">
-                  <img
-                    src={getSkillIconUrl(skill.icon)}
-                    alt={skill.name}
-                    className="max-h-full max-w-full object-contain"
-                  />
-                </div>
-                <span className="text-muted-foreground">{skill.name}</span>
-              </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
