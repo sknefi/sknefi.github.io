@@ -4,7 +4,7 @@ export const personalInfo = {
   email: "filip.karika1@gmail.com",
   phone: "+420 725 250 010",
   location: "Prague, Czech Republic",
-  bio: "I'm a 22-year-old full-stack developer with a strong focus on backend development and DevOps. I enjoy building reliable, scalable applications, working with APIs, databases, infrastructure, and modern deployment workflows. I am also interested in AI-powered products, especially RAG systems, MCPs, and tools that connect language models with real application data.",
+  bio: "I'm a 23-year-old full-stack developer with a strong focus on backend development and DevOps. I enjoy building reliable, scalable applications, working with APIs, databases, infrastructure, and modern deployment workflows. I am also interested in AI-powered products, especially RAG systems, MCPs, and tools that connect language models with real application data.",
   socialLinks: {
     github: "https://github.com/sknefi",
     linkedin: "https://www.linkedin.com/in/filip-karika-13b5072b0/",
@@ -180,6 +180,15 @@ export const projects = [
     repoLink: "https://github.com/sknefi/transcendence",
   },
   {
+    title: "HARDWARIO AI Chatbot",
+    description:
+      "As part of my bachelor thesis, I contributed to an open-source AI chatbot using Retrieval-Augmented Generation. The chatbot helps users navigate Hardwario documentation, understand hardware specifications, and find relevant e-shop products for their projects based on their needs.",
+    image: "/projects/hardwario.png",
+    technologies: ["Electron", "AI", "LLM", "OpenRouter", "RAG"],
+    liveLink: "-",
+    repoLink: "https://github.com/sknefi/bc_ai_chatbot",
+  },
+  {
     title: "Minishell",
     description:
       "Copy of the bash shell. It is a command line interpreter that allows you to execute commands and programs.",
@@ -343,6 +352,15 @@ export const projects = [
     repoLink: "https://github.com/sknefi/ai_uu/tree/main/p_07/uloha",
   },
   {
+    title: "Recode",
+    description:
+      "Recode is an application that helps students practice and memorize code through repetition. Users can add any code they want to learn and train with different practice modes and gameplay-inspired features, making it easier to remember exact syntax, structures, and programming patterns.",
+    image: "/projects/recode.png",
+    technologies: ["TypeScript", "React"],
+    liveLink: "-",
+    repoLink: "https://github.com/sknefi/recode",
+  },
+  {
     title: "BOOM Master - Neural network with evolutionary algorithm",
     description:
       "Neural network with evolutionary algorithm. The neural network trained the player to dodge mines in a game.",
@@ -390,21 +408,29 @@ export const projects = [
 ];
 
 export const education = [
+	{
+	  degree: "Software Development - Bachelor degree",
+	  institution: "Unicorn University",
+	  location: "Prague, Czech Republic",
+	  period: "2023 - present",
+	  description:
+		"Focus on web development, algorithms, software engineering and database management.",
+	},
   {
-    degree: "Software Engineering - Bachelor degree / certificate",
+    degree: "Software Engineering - IT architecture expert (RNCP 7)",
     institution: "42 Prague",
     location: "Prague, Czech Republic",
-    period: "2024 - present",
+    period: "2026 - present",
     description:
-      "Focus on low level programming, algorithms, data structures, system administration and communication skills.",
+      "Focus on designing scalable IT systems, network and data architectures, and machine learning concepts.",
   },
   {
-    degree: "Software Development - Bachelor degree",
-    institution: "Unicorn University",
+    degree: "Software Engineering - Common Core",
+    institution: "42 Prague",
     location: "Prague, Czech Republic",
-    period: "2023 - present",
+    period: "2024 September - 2026 May",
     description:
-      "Focus on web development, algorithms, software engineering and database management.",
+      "Focus on low level programming, algorithms, data structures, system administration and communication skills.",
   },
   {
     degree: "Informatics",
