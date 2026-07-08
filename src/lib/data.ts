@@ -296,7 +296,15 @@ export const projects = [
     liveLink: "-",
     repoLink: "https://github.com/sknefi/ai_uu/tree/main/p_02/uloha",
   },
-
+  {
+    title: "Teacher AI assistant",
+    description:
+      "DigiEduHackaton Prague - Helping teachers improve faster by giving them instant, actionable feedback on their lessons by transcripting their lecture.",
+    image: "/projects/ai-transcript-teacher.png",
+    technologies: ["Python", "Django", "Next.js", "LLM"],
+    liveLink: "https://github.com/sknefi/42Prague_digiEduHack_hackathon",
+    repoLink: "https://github.com/sknefi/teacher_ai_asistant",
+  },
   {
     title: "Cub3D",
     description:
@@ -343,6 +351,15 @@ export const projects = [
     repoLink: "https://github.com/sknefi/ai_uu/tree/main/p_08/uloha",
   },
   {
+    title: "Linear regression (car price)",
+    description:
+      "The goal is to predict a car price from its mileage using the hypothesis given by the 42 subject.",
+    image: "/projects/plot.png",
+    technologies: ["Python", "Matplotlib"],
+    liveLink: "-",
+    repoLink: "https://github.com/sknefi/ft_linear_regression",
+  },
+  {
     title: "Flowers recognition",
     description:
       "Flowers recognition using a neural network. The neural network is trained to recognise flowers from a dataset of images.",
@@ -386,6 +403,24 @@ export const projects = [
     technologies: ["Docker", "Docker-compose", "Dockerfile", "Nginx", "MariaDB", "Wordpress"],
     liveLink: "-",
     repoLink: "https://github.com/sknefi/inception",
+  },
+  {
+    title: "MCP client & server",
+    description:
+      "A small Model Context Protocol project for learning how an AI client can discover and call local tools. The server currently exposes local note tools plus external integrations for Discord and Google Calendar.",
+    image: "/projects/mcp-client-server.png",
+    technologies: ["TypeScript", "Node.js", "MCP client", "MCP server", "Google Calendar", "Discord channel", "Local file system", ],
+    liveLink: "-",
+    repoLink: "https://github.com/sknefi/notes-mcp-server-client",
+  },
+  {
+    title: "RugSleuth",
+    description:
+      "Eth Hackaton Prague - n autonomous agent with its own USDC wallet on Base — investigates it live in front of you. It buys onchain data (BaseScan), liquidity data (Dexscreener), and social signals (X/Twitter) by paying Apify Actors per call via the x402 protocol.",
+    image: "/projects/eth-prague-hacka1.png",
+    technologies: ["TypeScript", "Node.js", "Next.js", "Tailwind", "Apify", "x402", "Codex CLI", "MCP"],
+    liveLink: "-",
+    repoLink: "https://github.com/sknefi/eth-prague-hackaton",
   },
   {
     title: "Minitalk",
