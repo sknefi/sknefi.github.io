@@ -81,7 +81,7 @@ export const experience = [
     title: "Lektor",
     company: "Lionscz",
     location: "Brno, Czech Republic",
-    period: "June 2024 - June 2O26",
+    period: "July 2024 - July 2O26",
     description:
       "Creating manuals for students for python and web development courses, and teaching students remotely. (full-remote)",
     technologies: [
