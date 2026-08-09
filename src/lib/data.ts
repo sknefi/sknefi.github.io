@@ -79,6 +79,7 @@ export const skills = {
 export const experience = [
 {
     company: "42 Prague",
+    logo: "/company-logos/42-prague.png",
     title: "Full-stack developer",
       location: "Prague, remote",
       period: "August 2026 - Present",
@@ -107,6 +108,7 @@ export const experience = [
   },
   {
     company: "42 Prague",
+    logo: "/company-logos/42-prague.png",
     title: "AI Business Workshop Facilitator",
       location: "Prague, hybrid",
       period: "August 2026 - Present",
@@ -130,7 +132,8 @@ export const experience = [
   {
       title: "Lektor",
       company: "Lionscz",
-      location: "Brno, Czech Republic",
+      logo: "/company-logos/lionscz.png",
+      location: "Brno, remote",
       period: "July 2024 - July 2O26",
       description:
         "Creating manuals for students for python and web development courses, and teaching students remotely. (full-remote)",
@@ -152,6 +155,7 @@ export const experience = [
   {
     title: "Bartender",
     company: "Frýdek-Místek Tančírna",
+    logo: "/company-logos/frydek-mistek-tancirna.png",
     location: "Frýdek-Místek, on-site",
     period: "September 2022 - Present",
     description:
@@ -161,6 +165,7 @@ export const experience = [
   {
     title: "Life Guard",
     company: "Grandhotel Permon 4*",
+    logo: "/company-logos/grandhotel-permon.png",
     location: "Pribylina, on-site",
     period: "July 2023 - August 2023",
     description:
@@ -170,6 +175,7 @@ export const experience = [
   {
     title: "CNC machine operator",
     company: "Stolárstvo u Kunaja",
+    logo: "/company-logos/stolarstvo-u-kunaja.png",
     location: "Štrba, on-site",
     period: "July 2022 - August 2022",
     description:

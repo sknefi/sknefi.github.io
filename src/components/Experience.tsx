@@ -1,5 +1,37 @@
 import { experience } from "@/lib/data";
-import { Briefcase, Download } from "lucide-react";
+import { Download } from "lucide-react";
+import { useState } from "react";
+
+type CompanyLogoProps = {
+  company: string;
+  logo: string;
+};
+
+const CompanyLogo = ({ company, logo }: CompanyLogoProps) => {
+  const [hasFailed, setHasFailed] = useState(false);
+  const initials = company
+    .split(/\s+/)
+    .map((word) => word[0])
+    .join("")
+    .slice(0, 2);
+
+  return (
+    <div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-md border border-border bg-white p-1.5 dark:bg-white">
+      {hasFailed ? (
+        <span className="text-sm font-bold text-portfolio-blue" aria-label={`${company} logo unavailable`}>
+          {initials}
+        </span>
+      ) : (
+        <img
+          src={logo}
+          alt={`${company} logo`}
+          className="h-full w-full object-contain"
+          onError={() => setHasFailed(true)}
+        />
+      )}
+    </div>
+  );
+};
 
 const Experience = () => {
   return (
@@ -11,9 +43,7 @@ const Experience = () => {
           {experience.map((job, index) => (
             <div key={index} className="flex flex-col md:flex-row gap-6">
               <div className="flex-none">
-                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-portfolio-blue/10 text-portfolio-blue">
-                  <Briefcase size={20} />
-                </div>
+                <CompanyLogo company={job.company} logo={job.logo} />
               </div>
               
               <div className="flex-1 border-l-2 border-border pl-6 pb-6 relative">
