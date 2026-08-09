@@ -135,9 +135,9 @@ const Certificates = () => {
               <div className="flex justify-center mt-8">
                 <button 
                   onClick={handleShowMore}
-                  className="btn-primary mx-2"
+                  className="btn-outline mx-2"
                 >
-                  Show More
+                  View more certificates ({filteredCertificates.length - visibleCount})
                 </button>
               </div>
             )}

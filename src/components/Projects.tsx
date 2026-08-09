@@ -89,7 +89,7 @@ const Projects = () => {
               aria-expanded={showAllProjects}
               className="btn-outline inline-flex items-center"
             >
-              <span>{showAllProjects ? "Show less" : `Show more projects (${projects.length - initialProjectCount})`}</span>
+              <span>{showAllProjects ? "Show fewer projects" : `View more projects (${projects.length - initialProjectCount})`}</span>
               {showAllProjects ? <ChevronUp size={18} className="ml-2" /> : <ChevronDown size={18} className="ml-2" />}
             </button>
           </div>
