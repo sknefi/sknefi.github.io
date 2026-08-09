@@ -77,31 +77,82 @@ export const skills = {
 };
 
 export const experience = [
+{
+    company: "42 Prague",
+    title: "Full-stack developer",
+      location: "Prague, remote",
+      period: "August 2026 - Present",
+      description:
+        "Contributes to the development and growth of the 42\
+         Talent Board platform, which connects job-ready 42 \
+         students with companies looking to hire new talent. \
+         Develops front-end and back-end features on a \
+         modern technology stack (SvelteKit/Svelte, TypeScript, \
+         TailwindCSS, Go, Docker), works within an international \
+         team across campuses (Vienna, Warsaw, Prague) using \
+         sprints and a shared backlog, and contributes to \
+         testing and deploying new features to production.",
+      technologies: [
+        "SvelteKit/Svelte",
+        "TypeScript",
+        "TailwindCSS",
+        "Go",
+        "Docker",
+        "shadcn-svelte",
+        "PocketBase",
+        "SQLite",
+        "RESTful APIs",
+        "42 API"
+      ],
+  },
   {
-    title: "Lektor",
-    company: "Lionscz",
-    location: "Brno, Czech Republic",
-    period: "July 2024 - July 2O26",
-    description:
-      "Creating manuals for students for python and web development courses, and teaching students remotely. (full-remote)",
-    technologies: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Python",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "npm",
-      "Auth",
-      "RESTful APIs",
-      "...",
-    ],
+    company: "42 Prague",
+    title: "AI Business Workshop Facilitator",
+      location: "Prague, hybrid",
+      period: "August 2026 - Present",
+      description:
+        "Contributes to the preparation, organization and \
+          delivery of 42Prague educational programs in AI and \
+          other technological skills, provides pedagogical and \
+          facilitation support to participants, and takes on \
+          various team roles as needed by the project. Also \
+          contributes to the development of educational \
+          content, including building and adjusting the \
+          educational platform itself and implementing content \
+          onto it.", 
+      technologies: [
+        "Jira",
+        "Communication",
+        "Hosting",
+        "Preparation of events",
+      ],
+  },
+  {
+      title: "Lektor",
+      company: "Lionscz",
+      location: "Brno, Czech Republic",
+      period: "July 2024 - July 2O26",
+      description:
+        "Creating manuals for students for python and web development courses, and teaching students remotely. (full-remote)",
+      technologies: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Python",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "npm",
+        "Auth",
+        "RESTful APIs",
+        "...",
+      ],
+
   },
   {
     title: "Bartender",
     company: "Frýdek-Místek Tančírna",
-    location: "Frýdek-Místek, Czech Republic",
+    location: "Frýdek-Místek, on-site",
     period: "September 2022 - Present",
     description:
       "Helping with preparation of events. Making drinks and serving them to the guests. I am participating in this event every 1-2 months.",
@@ -110,7 +161,7 @@ export const experience = [
   {
     title: "Life Guard",
     company: "Grandhotel Permon 4*",
-    location: "Pribylina, Slovakia",
+    location: "Pribylina, on-site",
     period: "July 2023 - August 2023",
     description:
       "Taking care of the guests, swimming pool, tobogans, and other facilities. Helping injured guests and guests with disabilities.",
@@ -119,7 +170,7 @@ export const experience = [
   {
     title: "CNC machine operator",
     company: "Stolárstvo u Kunaja",
-    location: "Štrba, Slovakia",
+    location: "Štrba, on-site",
     period: "July 2022 - August 2022",
     description:
       "Assisted in CNC machine operation, we were processing doors and windows from unprocessed wood.",
