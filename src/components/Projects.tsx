@@ -1,14 +1,19 @@
 import { projects } from "@/lib/data";
-import { ExternalLink, Github } from "lucide-react";
+import { ChevronDown, ChevronUp, ExternalLink, Github } from "lucide-react";
+import { useState } from "react";
 
 const Projects = () => {
+  const [showAllProjects, setShowAllProjects] = useState(false);
+  const initialProjectCount = 6;
+  const visibleProjects = showAllProjects ? projects : projects.slice(0, initialProjectCount);
+
   return (
     <section id="projects" className="section-padding bg-muted/30">
       <div className="container mx-auto">
         <h2 className="section-title">My Projects</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {projects.map((project, index) => (
+          {visibleProjects.map((project, index) => (
             <div 
               key={index} 
               className="bg-card text-card-foreground rounded-lg overflow-hidden border border-border shadow-sm hover:border-portfolio-blue/60 hover:shadow-lg transition duration-300"
@@ -75,6 +80,20 @@ const Projects = () => {
             </div>
           ))}
         </div>
+
+        {projects.length > initialProjectCount && (
+          <div className="mt-10 text-center">
+            <button
+              type="button"
+              onClick={() => setShowAllProjects((current) => !current)}
+              aria-expanded={showAllProjects}
+              className="btn-outline inline-flex items-center"
+            >
+              <span>{showAllProjects ? "Show less" : `Show more projects (${projects.length - initialProjectCount})`}</span>
+              {showAllProjects ? <ChevronUp size={18} className="ml-2" /> : <ChevronDown size={18} className="ml-2" />}
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
