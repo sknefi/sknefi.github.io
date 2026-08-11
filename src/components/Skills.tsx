@@ -1,4 +1,5 @@
 import { skills } from "@/lib/data";
+import ProjectSkillsRadar from "@/components/ProjectSkillsRadar";
 import { useTheme } from "next-themes";
 
 const Skills = () => {
@@ -21,6 +22,8 @@ const Skills = () => {
     <section id="skills" className="section-padding bg-muted/30">
       <div className="container mx-auto">
         <h2 className="section-title">My Skills</h2>
+
+        <ProjectSkillsRadar />
 
         <div className="space-y-5">
           {skillGroups.map((group) => (

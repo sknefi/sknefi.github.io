@@ -499,6 +499,17 @@ export const projects = [
   },
 ];
 
+export const skillFocusCategories = [
+  { category: "Software Engineering", level: 83, focus: "Strong" },
+  { category: "Backend", level: 92, focus: "Primary focus" },
+  { category: "Frontend", level: 80, focus: "Working strength" },
+  { category: "DevOps", level: 55, focus: "Working strength" },
+  { category: "AI & ML", level: 75, focus: "Growing focus" },
+  { category: "Data Science", level: 64, focus: "Growing focus" },
+  { category: "Systems & Unix", level: 69, focus: "Growing focus" },
+  { category: "Networking & IoT", level: 42, focus: "Foundation" },
+];
+
 export const education = [
 	{
 	  degree: "Software Development - Bachelor degree",
