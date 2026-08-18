@@ -1,10 +1,10 @@
 export const personalInfo = {
   name: "Filip Karika",
-  title: "Full-Stack Developer focused on Backend & DevOps",
+  title: "Full-Stack Developer focused on Backend & AI Integrations",
   email: "filip.karika1@gmail.com",
   phone: "+420 725 250 010",
   location: "Prague, Czech Republic",
-  bio: "I'm a 23-year-old full-stack developer with a strong focus on backend development and DevOps. I enjoy building reliable, scalable applications, working with APIs, databases, infrastructure, and modern deployment workflows. I am also interested in AI-powered products, especially RAG systems, MCPs, and tools that connect language models with real application data.",
+  bio: "I'm a 23-year-old full-stack developer with a strong focus on backend development and AI Integrations. I enjoy building reliable, scalable applications, working with APIs, databases, infrastructure, and modern deployment workflows. I am also interested in AI-powered products, especially RAG systems, MCPs, and tools that connect language models with real application data.",
   socialLinks: {
     github: "https://github.com/sknefi",
     linkedin: "https://www.linkedin.com/in/filip-karika-13b5072b0/",
@@ -614,7 +614,7 @@ export const certificates = [
     image: "/cert_imgs/unicornuni.png",
     link: "/cert_pdfs/be6.pdf",
     description:
-      "Overview of software development practices, methodologies, and lifecycles including Agile, DevOps, and testing approaches.",
+      "Professional English communication skills for business environments, technical documentation, and presentations.",
   },
   {
     name: "Introduction to Software Development",
