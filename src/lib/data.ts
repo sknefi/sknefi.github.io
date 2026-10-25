@@ -564,22 +564,22 @@ export const certificates = [
       "Comprehensive study of data structures and algorithms including sorting, searching, and graph algorithms with practical implementations.",
   },
   {
-    name: "Basics of Web Development",
+    name: "Introduction to software architecture",
     issuer: "Unicorn University",
     date: "2024",
     image: "/cert_imgs/unicornuni.png",
-    link: "/cert_pdfs/basicwebdev.pdf",
+    link: "/cert_pdfs/itsa.pdf",
     description:
-      "Introduction to HTML, CSS, and JavaScript. Building responsive websites with modern web development practices.",
+      "Understanding architectural patterns, system design principles, and making architectural decisions for scalable solutions.",
   },
   {
-    name: "MongoDB Essentials",
+    name: "Basics concepts of cybersecurity",
     issuer: "Unicorn University",
-    date: "2024",
+    date: "2025",
     image: "/cert_imgs/unicornuni.png",
-    link: "/cert_pdfs/mongodb.pdf",
+    link: "/cert_pdfs/cybersec.pdf",
     description:
-      "Core concepts of MongoDB database system including CRUD operations, aggregation framework, and data modeling strategies.",
+      "Introduction to information security principles, common vulnerabilities, and defensive measures for web applications.",
   },
   {
     name: "Elements of AI",
@@ -606,6 +606,24 @@ export const certificates = [
     link: "/cert_pdfs/rwd.png",
     description:
       "Creating responsive layouts with CSS flexbox, grid, and media queries to ensure applications work across all device sizes.",
+  },
+  {
+    name: "Generative AI",
+    issuer: "Datacamp",
+    date: "2026",
+    image: "/cert_imgs/Datacamp.png",
+    link: "/cert_pdfs/generative-ai-certificate.pdf",
+    description:
+      "Exploring how generative AI models create text, images, and other content, with a focus on practical applications, responsible use, and effective prompting.",
+  },
+  {
+    name: "Understanding AI",
+    issuer: "Datacamp",
+    date: "2026",
+    image: "/cert_imgs/Datacamp.png",
+    link: "/cert_pdfs/understanding-ai-certificate.pdf",
+    description:
+      "Building a practical foundation in artificial intelligence, including machine learning concepts, real-world applications, limitations, and responsible AI use.",
   },
   {
     name: "Business English B2-C1",
@@ -635,6 +653,24 @@ export const certificates = [
       "Building modern single-page applications with React, including state management, hooks, and component architecture.",
   },
   {
+    name: "MongoDB Essentials",
+    issuer: "Unicorn University",
+    date: "2024",
+    image: "/cert_imgs/unicornuni.png",
+    link: "/cert_pdfs/mongodb.pdf",
+    description:
+      "Core concepts of MongoDB database system including CRUD operations, aggregation framework, and data modeling strategies.",
+  },
+  {
+    name: "Basics of Web Development",
+    issuer: "Unicorn University",
+    date: "2024",
+    image: "/cert_imgs/unicornuni.png",
+    link: "/cert_pdfs/basicwebdev.pdf",
+    description:
+      "Introduction to HTML, CSS, and JavaScript. Building responsive websites with modern web development practices.",
+  },
+  {
     name: "Programming in JavaScript",
     issuer: "Unicorn University",
     date: "2024",
@@ -642,24 +678,6 @@ export const certificates = [
     link: "/cert_pdfs/js.pdf",
     description:
       "Core JavaScript concepts including DOM manipulation, async programming, and modern ES6+ features.",
-  },
-  {
-    name: "Basics concepts of cybersecurity",
-    issuer: "Unicorn University",
-    date: "2025",
-    image: "/cert_imgs/unicornuni.png",
-    link: "/cert_pdfs/cybersec.pdf",
-    description:
-      "Introduction to information security principles, common vulnerabilities, and defensive measures for web applications.",
-  },
-  {
-    name: "Introduction to software architecture",
-    issuer: "Unicorn University",
-    date: "2024",
-    image: "/cert_imgs/unicornuni.png",
-    link: "/cert_pdfs/itsa.pdf",
-    description:
-      "Understanding architectural patterns, system design principles, and making architectural decisions for scalable solutions.",
   },
   {
     name: "IoT Essentials",
