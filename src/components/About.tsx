@@ -1,6 +1,21 @@
 import { education } from "@/lib/data";
 import { GraduationCap } from "lucide-react";
 
+const educationGroups = [
+  {
+    id: "current-education",
+    title: "Currently studying",
+    isCurrent: true,
+    entries: education.filter((edu) => edu.period.endsWith("present")),
+  },
+  {
+    id: "previous-education",
+    title: "Previous studies",
+    isCurrent: false,
+    entries: education.filter((edu) => !edu.period.endsWith("present")),
+  },
+];
+
 const About = () => {
   return (
     <section id="about" aria-labelledby="about-heading" className="section-padding scroll-mt-20 bg-background">
@@ -17,35 +32,60 @@ const About = () => {
             </h3>
           </div>
 
-          <ol className="overflow-hidden rounded-xl border border-border bg-card">
-            {education.map((edu) => (
-              <li
-                key={`${edu.institution}-${edu.degree}`}
-                className="grid gap-3 border-b border-border p-5 last:border-b-0 sm:p-6 md:grid-cols-[9rem_minmax(0,1fr)] md:gap-x-8 md:gap-y-0 lg:p-8 xl:grid-cols-[10rem_minmax(0,1.2fr)_minmax(0,1fr)]"
-              >
-                <div className="flex items-center gap-3 self-start pt-0.5 text-sm font-semibold tabular-nums text-primary">
-                  <span className="h-2 w-2 shrink-0 rounded-full bg-primary" aria-hidden="true" />
-                  <span>{edu.period}</span>
-                </div>
+          <div className="space-y-8">
+            {educationGroups.map((group) => (
+              <div key={group.id}>
+                <h4
+                  id={group.id}
+                  className={`mb-3 flex items-center gap-2.5 text-xs font-semibold uppercase tracking-wider ${
+                    group.isCurrent ? "text-primary" : "text-muted-foreground"
+                  }`}
+                >
+                  <span
+                    className={`h-2 w-2 rounded-full ${group.isCurrent ? "bg-primary" : "bg-muted-foreground/50"}`}
+                    aria-hidden="true"
+                  />
+                  {group.title}
+                </h4>
 
-                <div className="min-w-0">
-                  <h4 className="text-lg font-semibold leading-snug tracking-tight lg:text-xl">
-                    {edu.degree}
-                  </h4>
-                  <p className="mt-2 text-sm font-medium leading-relaxed text-foreground/80">
-                    {edu.institution}
-                  </p>
-                  <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
-                    {edu.location}
-                  </p>
-                </div>
+                <ol
+                  aria-labelledby={group.id}
+                  className={`overflow-hidden rounded-xl border ${
+                    group.isCurrent ? "border-primary/30 bg-primary/5" : "border-border bg-card"
+                  }`}
+                >
+                  {group.entries.map((edu) => (
+                    <li
+                      key={`${edu.institution}-${edu.degree}`}
+                      className={`grid gap-3 border-b p-5 last:border-b-0 sm:p-6 md:grid-cols-[9rem_minmax(0,1fr)] md:gap-x-8 md:gap-y-0 lg:p-8 xl:grid-cols-[10rem_minmax(0,1.2fr)_minmax(0,1fr)] ${
+                        group.isCurrent ? "border-primary/20" : "border-border"
+                      }`}
+                    >
+                      <p className={`self-start pt-0.5 text-sm font-semibold tabular-nums ${group.isCurrent ? "text-primary" : "text-muted-foreground"}`}>
+                        {edu.period}
+                      </p>
 
-                <p className="text-sm leading-relaxed text-muted-foreground md:col-start-2 md:mt-3 xl:col-start-auto xl:mt-0 xl:border-l xl:border-border xl:pl-8">
-                  {edu.description}
-                </p>
-              </li>
+                      <div className="min-w-0">
+                        <h5 className="text-lg font-semibold leading-snug tracking-tight lg:text-xl">
+                          {edu.degree}
+                        </h5>
+                        <p className="mt-2 text-sm font-medium leading-relaxed text-foreground/80">
+                          {edu.institution}
+                        </p>
+                        <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
+                          {edu.location}
+                        </p>
+                      </div>
+
+                      <p className="text-sm leading-relaxed text-muted-foreground md:col-start-2 md:mt-3 xl:col-start-auto xl:mt-0 xl:border-l xl:border-border xl:pl-8">
+                        {edu.description}
+                      </p>
+                    </li>
+                  ))}
+                </ol>
+              </div>
             ))}
-          </ol>
+          </div>
         </div>
 
         <div className="mt-12 grid gap-5 rounded-xl bg-muted/40 p-5 sm:p-6 lg:grid-cols-[12rem_minmax(0,1fr)] lg:gap-10 lg:p-8">
