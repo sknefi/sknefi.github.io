@@ -511,29 +511,37 @@ export const skillFocusCategories = [
 ];
 
 export const education = [
-	{
-	  degree: "Software Development - Bachelor degree",
-	  institution: "Unicorn University",
-	  location: "Prague, Czech Republic",
-	  period: "2023 - present",
-	  description:
-		"Focus on web development, algorithms, software engineering and database management.",
-	},
-  {
-    degree: "Software Engineering - IT architecture expert (RNCP 7)",
-    institution: "42 Prague",
-    location: "Prague, Czech Republic",
-    period: "2026 - present",
-    description:
-      "Focus on designing scalable IT systems, network and data architectures, and machine learning concepts.",
-  },
+    {
+        degree: "AI, Data Science and Machine Learning - Master's degree",
+        institution: "Faculty of Informatics and Statistics VŠE Prague",
+        location: "Prague, Czech Republic",
+        period: "2026 - present",
+        description:
+          "Advancing my knowledge of artificial intelligence, data science, machine learning, statistical methods, and their practical applications.",
+      },
+    {
+        degree: "IT architecture expert - RNCP 7",
+        institution: "42 Prague",
+        location: "Prague, Czech Republic",
+        period: "2026 - present",
+        description:
+          "Developing expertise in scalable IT systems, network and data architectures, and machine learning concepts.",
+      },
   {
     degree: "Software Engineering - Common Core",
     institution: "42 Prague",
     location: "Prague, Czech Republic",
-    period: "2024 September - 2026 May",
+    period: "2024 - 2026",
     description:
-      "Focus on low level programming, algorithms, data structures, system administration and communication skills.",
+      "Completed an intensive curriculum in low-level programming, algorithms, data structures, system administration, and collaboration.",
+  },
+  {
+    degree: "Software Development - Bachelor degree",
+    institution: "Unicorn University",
+    location: "Prague, Czech Republic",
+    period: "2023 - 2026",
+    description:
+      "Building a foundation in web development, algorithms, software engineering, and database management.",
   },
   {
     degree: "Informatics",
@@ -541,7 +549,7 @@ export const education = [
     location: "Prague, Czech Republic",
     period: "2022 - 2023",
     description:
-      "Focus on programming, algorithms, data structures and mathematics.",
+      "Studied core programming, algorithms, data structures, and mathematics.",
   },
   {
     degree: "High School",
@@ -549,7 +557,7 @@ export const education = [
     location: "Poprad, Slovakia",
     period: "2018 - 2022",
     description:
-      "Focus on programming, networking, graphics, electronics and web development.",
+      "Gained early experience in programming, networking, graphics, electronics, and web development.",
   },
 ];
 
