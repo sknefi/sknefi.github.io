@@ -529,6 +529,15 @@ export const education = [
         description:
           "Developing expertise in scalable IT systems, network and data architectures, and machine learning concepts.",
       },
+      {
+        degree: "Software Development - Bachelor's degree",
+        institution: "Unicorn University",
+        location: "Prague, Czech Republic",
+        period: "2023 - 2026",
+        distinction: "Graduated with a red diploma",
+        description:
+          "Building a foundation in web development, algorithms, software engineering, and database management.",
+      },
   {
     degree: "Software Engineering - Common Core",
     institution: "42 Prague",
@@ -536,15 +545,6 @@ export const education = [
     period: "2024 - 2026",
     description:
       "Completed an intensive curriculum in low-level programming, algorithms, data structures, system administration, and collaboration.",
-  },
-  {
-    degree: "Software Development - Bachelor's degree",
-    institution: "Unicorn University",
-    location: "Prague, Czech Republic",
-    period: "2023 - 2026",
-    distinction: "Graduated with a red diploma",
-    description:
-      "Building a foundation in web development, algorithms, software engineering, and database management.",
   },
   {
     degree: "IT",
