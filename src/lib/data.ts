@@ -44,6 +44,7 @@ export const skills = {
     { name: "Vite", icon: "vite" },
     { name: "shadcn/ui", icon: "shadcn" },
     { name: "Bootstrap", icon: "bootstrap" },
+    { name: "Svelte", icon: "svelte" },
     { name: "React Bootstrap", icon: "reactbootstrap" },
     { name: "HTMX", icon: "htmx" },
     { name: "Bun", icon: "bun" },
@@ -56,6 +57,7 @@ export const skills = {
     { name: "MongoDB", icon: "mongodb" },
     { name: "Mongoose", icon: "mongoose" },
     { name: "SQLite", icon: "sqlite" },
+    { name: "PocketBase", icon: "pocketbase" },    
     { name: "Python", icon: "python" },
     { name: "TensorFlow", icon: "tensorflow" },
     { name: "NumPy", icon: "numpy" },
@@ -512,8 +514,8 @@ export const skillFocusCategories = [
 
 export const education = [
     {
-        degree: "AI, Data Science and Machine Learning - Master's degree",
-        institution: "Faculty of Informatics and Statistics VŠE Prague",
+        degree: "AI, Data Science, and Machine Learning - Master's degree",
+        institution: "VŠE Prague, Faculty of Informatics and Statistics",
         location: "Prague, Czech Republic",
         period: "2026 - present",
         description:
@@ -536,16 +538,17 @@ export const education = [
       "Completed an intensive curriculum in low-level programming, algorithms, data structures, system administration, and collaboration.",
   },
   {
-    degree: "Software Development - Bachelor degree",
+    degree: "Software Development - Bachelor's degree",
     institution: "Unicorn University",
     location: "Prague, Czech Republic",
     period: "2023 - 2026",
+    distinction: "Graduated with a red diploma",
     description:
       "Building a foundation in web development, algorithms, software engineering, and database management.",
   },
   {
-    degree: "Informatics",
-    institution: "Charles University",
+    degree: "IT",
+    institution: "Charles University, Faculty of Mathematics and Physics",
     location: "Prague, Czech Republic",
     period: "2022 - 2023",
     description:
